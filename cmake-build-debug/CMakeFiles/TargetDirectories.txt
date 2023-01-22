@@ -1,0 +1,3 @@
+/Users/lymondgl/s21_Monitoring_System/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/lymondgl/s21_Monitoring_System/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/lymondgl/s21_Monitoring_System/cmake-build-debug/CMakeFiles/s21_Monitoring_System.dir
