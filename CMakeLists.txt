@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(s21_Monitoring_System
         src/agents/agent.cpp
-        src/kernel.cpp)
+        src/kernel.cpp
+        src/bot/bot.cpp)
