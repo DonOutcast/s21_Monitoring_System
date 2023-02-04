@@ -1,12 +1,22 @@
 #include "view.h"
 #include "ui_view.h"
 
-view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view) {
+view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view),  groupActionUpper_(new QActionGroup(this)) {
   ui->setupUi(this);
   timer_ = new QTimer(this);
+  /*---группировка actions находящихся на верхнем toolBar---*/
+  this->groupingActionUpperToolBar();
+  /*-------------------------------------------------------*/
+  this->setSlots();
+
+
+
 }
 
-view::~view() { delete ui; }
+view::~view() {
+    delete ui;
+    delete this->groupActionUpper_;
+}
 
 //Запуск ядра
 void view::on_start_clicked() {
@@ -51,3 +61,55 @@ void view::on_stop_clicked() {
   connect(timer_, SIGNAL(timeout()), this, SLOT(on_stop_clicked()));
   timer_->stop();
 }
+
+
+
+auto view::setSlots() -> void {
+    // группа QAction верхнего toolBar
+    connect(groupActionUpper_, SIGNAL(triggered(QAction *)), this,
+            SLOT(triggeredGroupActionUpper(QAction *)));
+    /*----------------------------------------*/
+}
+
+
+auto view::groupingActionUpperToolBar() ->void {
+  groupActionUpper_->addAction(ui->actionMemory_Agent);
+//  this->groupActionUpper_->addAction(ui->action_upload_images);
+//  this->groupActionUpper_->addAction(ui->actionSettings);
+//  this->groupActionUpper_->addAction(ui->actionUpload_weights);
+//  this->groupActionUpper_->addAction(ui->actionDownload_weights);
+//  this->groupActionUpper_->addAction(ui->actionTrain);
+//  this->groupActionUpper_->addAction(ui->actionTest);
+}
+
+auto view::triggeredGroupActionUpper(QAction *action) -> void {
+  if (action == ui->actionMemory_Agent) {
+    this->action_memory_agent();
+  }
+//  else if (action == ui->action_upload_images) {
+//    this->action_upload_images();
+//  } else if (action == ui->actionSettings) {
+//    this->settings_on_off();
+//  } else if (action == ui->actionUpload_weights) {
+//      this->action_upload_weights();
+//  } else if (action == ui->actionDownload_weights) {
+//      this->action_download_weights();
+//  } else if (action == ui->actionTrain) {
+//      this->action_train();
+//  } else if (action == ui->actionTest) {
+//      this->action_test();
+//  }
+}
+
+auto view::action_memory_agent() -> void {
+    if (ui->actionMemory_Agent->iconText() == "Memory_Agent_on") {
+        ui->actionMemory_Agent->setIcon(QIcon(":/images/agent_1_off.png"));
+        ui->actionMemory_Agent->setIconText("Memory_Agent_off");
+    } else {
+      ui->actionMemory_Agent->setIcon(QIcon(":/images/agent_1_on.png"));
+      ui->actionMemory_Agent->setIconText("Memory_Agent_on");
+
+    }
+
+
+ }

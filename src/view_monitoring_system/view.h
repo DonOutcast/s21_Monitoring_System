@@ -8,6 +8,8 @@
 #include <QFileSystemWatcher>
 #include <QTimer>
 #include <QDateTime>
+#include <QActionGroup>
+#include <QDebug>
 
 
 QT_BEGIN_NAMESPACE
@@ -22,6 +24,14 @@ class view : public QMainWindow {
 public:
   view(QWidget *parent = nullptr);
   ~view();
+
+  auto groupingActionUpperToolBar() ->void;
+  auto setSlots() -> void ;
+  auto action_memory_agent() -> void ;
+  QActionGroup *groupActionUpper_;
+
+private slots:
+  auto triggeredGroupActionUpper(QAction *action) -> void;
 
 private slots:
   void on_start_clicked();

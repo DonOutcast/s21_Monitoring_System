@@ -41,3 +41,6 @@ DISTFILES += \
     ../Makefile \
     ../config.conf \
     ../logs.txt
+
+RESOURCES += \
+    Resources.qrc
