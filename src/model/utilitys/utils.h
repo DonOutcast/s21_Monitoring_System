@@ -16,5 +16,6 @@
 
 void input_file(std::string text);
 std::string get_time();
+std::string print_last_string();
 
 #endif

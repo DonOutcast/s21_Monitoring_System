@@ -7,7 +7,7 @@ PR_NAME = s21_Monitoring_system
 
 ALL_FILE_CC = ./model/model.cc ./model/agents/lib_cpu_agent.cc ./model/agents/lib_memory_agent.cc \
 ./model/agents/lib_network_agent.cc ./model/utilitys/lib_start_agent.cc ./model/utilitys/utils.cc ./controller/controller.cc \
-./model/utilitys/load_value_from_config.cc ./model/agents/lib_special_agent.cc
+./model/agents/lib_special_agent.cc
 
 ALL_FILE_H = ./model/model.h ./model/agents/lib_agents.h ./model/utilitys/utils.h ./controller/controller.h
 ALL_FILE_O = model.o
@@ -19,6 +19,10 @@ else
 endif
 
 all: clean $(PR_NAME).a
+
+bot: $(PR_NAME).a
+	@$(CC) $(CL_11) ./model/testbot.cc $(ALL_FILE_CC)
+	@./a.out
 
 temp_test:
 	@$(CC) $(PR_NAME).cc
@@ -40,9 +44,9 @@ gcov_report:
 	@open ./report/index.html
 
 install:
-	@make clean
-	@mkdir build
-	@cd view && qmake && make && make clean && rm Makefile && cd ../ && mv view/view.app build/
+        @make clean
+        @mkdir build
+        @cd view && qmake && make && make clean && rm Makefile && cd ../ && mv view/view.app build/
 
 uninstall:
 	@rm -rf build*
@@ -84,4 +88,4 @@ check:
 	@cd view && clang-format -n ./*.cpp ./*.h
 
 cppcheck:
-	@cppcheck --enable=all --suppress=missingIncludeSystem $(ALL_FILE_CC)
+        @cppcheck --enable=all --suppress=missingIncludeSystem $(ALL_FILE_CC)

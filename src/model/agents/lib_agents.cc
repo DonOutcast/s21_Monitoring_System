@@ -1,9 +1,9 @@
 #include "lib_agents.h"
 
 void Lib_agent::read_conf() {
-  std::ifstream file("../config.conf");
+  std::ifstream file("../../../../config.conf");
   if (!file.good()) {
-    throw std::runtime_error("File not exitst!");
+    throw std::runtime_error("File not exist!");
   }
   std::regex delim("\\s+");
   std::string line;
