@@ -31,6 +31,8 @@ public:
     QAction *actionMemory_Agent;
     QAction *actionNetwork_Agent;
     QAction *actionCpu_Agent;
+    QAction *actionSpecial_Agent;
+    QAction *actionStart_all;
     QWidget *centralwidget;
     QTextBrowser *textBrowser;
     QWidget *verticalLayoutWidget;
@@ -126,6 +128,26 @@ public:
             icon2.addFile(QString::fromUtf8(":/images/agent_3_off.png"), QSize(), QIcon::Normal, QIcon::Off);
         }
         actionCpu_Agent->setIcon(icon2);
+        actionSpecial_Agent = new QAction(view);
+        actionSpecial_Agent->setObjectName(QString::fromUtf8("actionSpecial_Agent"));
+        QIcon icon3;
+        iconThemeName = QString::fromUtf8("Special_Agent");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon3 = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon3.addFile(QString::fromUtf8(":/images/agent_4_off.png"), QSize(), QIcon::Normal, QIcon::Off);
+        }
+        actionSpecial_Agent->setIcon(icon3);
+        actionStart_all = new QAction(view);
+        actionStart_all->setObjectName(QString::fromUtf8("actionStart_all"));
+        QIcon icon4;
+        iconThemeName = QString::fromUtf8("Start_All");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon4 = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon4.addFile(QString::fromUtf8(":/images/start_off.png"), QSize(), QIcon::Normal, QIcon::Off);
+        }
+        actionStart_all->setIcon(icon4);
         centralwidget = new QWidget(view);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         textBrowser = new QTextBrowser(centralwidget);
@@ -432,6 +454,8 @@ public:
         toolBar->addAction(actionMemory_Agent);
         toolBar->addAction(actionNetwork_Agent);
         toolBar->addAction(actionCpu_Agent);
+        toolBar->addAction(actionSpecial_Agent);
+        toolBar->addAction(actionStart_all);
 
         retranslateUi(view);
 
@@ -449,6 +473,14 @@ public:
         actionCpu_Agent->setText(QCoreApplication::translate("view", "Cpu_Agent_off", nullptr));
 #if QT_CONFIG(tooltip)
         actionCpu_Agent->setToolTip(QCoreApplication::translate("view", "Cpu_Agent_off", nullptr));
+#endif // QT_CONFIG(tooltip)
+        actionSpecial_Agent->setText(QCoreApplication::translate("view", "Special_Agent_off", nullptr));
+#if QT_CONFIG(tooltip)
+        actionSpecial_Agent->setToolTip(QCoreApplication::translate("view", "Special_Agent_off", nullptr));
+#endif // QT_CONFIG(tooltip)
+        actionStart_all->setText(QCoreApplication::translate("view", "Start_all_off", nullptr));
+#if QT_CONFIG(tooltip)
+        actionStart_all->setToolTip(QCoreApplication::translate("view", "Start_all_on", nullptr));
 #endif // QT_CONFIG(tooltip)
         cpu_on->setText(QCoreApplication::translate("view", "ON", nullptr));
         cpu_off->setText(QCoreApplication::translate("view", "OFF", nullptr));

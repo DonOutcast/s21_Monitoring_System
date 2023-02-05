@@ -963,12 +963,16 @@ compiler_rcc_clean:
 	-$(DEL_FILE) qrc_Resources.cpp
 qrc_Resources.cpp: ../view_monitoring_system/Resources.qrc \
 		/usr/local/share/qt/libexec/rcc \
-		../view_monitoring_system/images/agent_3_off.png \
 		../view_monitoring_system/images/agent_1_off.png \
 		../view_monitoring_system/images/agent_3_on.png \
+		../view_monitoring_system/images/agent_4_off.png \
+		../view_monitoring_system/images/agent_3_off.png \
 		../view_monitoring_system/images/agent_2_off.png \
-		../view_monitoring_system/images/bg.png \
 		../view_monitoring_system/images/agent_2_on.png \
+		../view_monitoring_system/images/start_off.png \
+		../view_monitoring_system/images/start_on.png \
+		../view_monitoring_system/images/agent_4_on.png \
+		../view_monitoring_system/images/bg.png \
 		../view_monitoring_system/images/agent_1_on.png
 	/usr/local/share/qt/libexec/rcc -name Resources ../view_monitoring_system/Resources.qrc -o qrc_Resources.cpp
 

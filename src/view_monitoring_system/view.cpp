@@ -76,8 +76,8 @@ auto view::groupingActionUpperToolBar() ->void {
   this->groupActionUpper_->addAction(ui->actionMemory_Agent);
   this->groupActionUpper_->addAction(ui->actionNetwork_Agent);
   this->groupActionUpper_->addAction(ui->actionCpu_Agent);
-//  this->groupActionUpper_->addAction(ui->actionUpload_weights);
-//  this->groupActionUpper_->addAction(ui->actionDownload_weights);
+  this->groupActionUpper_->addAction(ui->actionSpecial_Agent);
+  this->groupActionUpper_->addAction(ui->actionStart_all);
 //  this->groupActionUpper_->addAction(ui->actionTrain);
 //  this->groupActionUpper_->addAction(ui->actionTest);
 }
@@ -90,18 +90,11 @@ auto view::triggeredGroupActionUpper(QAction *action) -> void {
     this->action_network_agent();
   } else if (action == ui->actionCpu_Agent) {
     this->action_cpu_agent();
+  } else if (action == ui->actionSpecial_Agent) {
+      this->action_special_agent();
+  } else if (action == ui->actionStart_all) {
+      this->action_start_all();
   }
-      //else if (action == ui->actionSettings) {
-//    this->settings_on_off();
-//  } else if (action == ui->actionUpload_weights) {
-//      this->action_upload_weights();
-//  } else if (action == ui->actionDownload_weights) {
-//      this->action_download_weights();
-//  } else if (action == ui->actionTrain) {
-//      this->action_train();
-//  } else if (action == ui->actionTest) {
-//      this->action_test();
-//  }
 }
 
 auto view::action_memory_agent() -> void {
@@ -135,6 +128,30 @@ auto view::action_cpu_agent() -> void {
     } else {
       ui->actionCpu_Agent->setIcon(QIcon(":/images/agent_3_on.png"));
       ui->actionCpu_Agent->setIconText("Network_Agent_on");
+
+    }
+
+ }
+
+auto view::action_special_agent() -> void {
+    if (ui->actionSpecial_Agent->iconText() == "Network_Agent_on") {
+        ui->actionSpecial_Agent->setIcon(QIcon(":/images/agent_4_off.png"));
+        ui->actionSpecial_Agent->setIconText("Network_Agent_off");
+    } else {
+      ui->actionSpecial_Agent->setIcon(QIcon(":/images/agent_4_on.png"));
+      ui->actionSpecial_Agent->setIconText("Network_Agent_on");
+
+    }
+
+ }
+
+auto view::action_start_all() -> void {
+    if (ui->actionStart_all->iconText() == "Start_all_on") {
+        ui->actionStart_all->setIcon(QIcon(":/images/start_off.png"));
+        ui->actionStart_all->setIconText("Start_all_off");
+    } else {
+      ui->actionStart_all->setIcon(QIcon(":/images/start_on.png"));
+      ui->actionStart_all->setIconText("Start_all_on");
 
     }
 
