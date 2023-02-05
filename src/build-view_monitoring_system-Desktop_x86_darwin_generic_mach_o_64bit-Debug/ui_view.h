@@ -29,6 +29,7 @@ class Ui_view
 {
 public:
     QAction *actionMemory_Agent;
+    QAction *actionNetwork_Agent;
     QWidget *centralwidget;
     QTextBrowser *textBrowser;
     QWidget *verticalLayoutWidget;
@@ -104,6 +105,16 @@ public:
         actionMemory_Agent->setIconVisibleInMenu(false);
         actionMemory_Agent->setShortcutVisibleInContextMenu(false);
         actionMemory_Agent->setPriority(QAction::NormalPriority);
+        actionNetwork_Agent = new QAction(view);
+        actionNetwork_Agent->setObjectName(QString::fromUtf8("actionNetwork_Agent"));
+        QIcon icon1;
+        iconThemeName = QString::fromUtf8("Network_Agent");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon1 = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon1.addFile(QString::fromUtf8(":/images/agent_2_off.png"), QSize(), QIcon::Normal, QIcon::Off);
+        }
+        actionNetwork_Agent->setIcon(icon1);
         centralwidget = new QWidget(view);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         textBrowser = new QTextBrowser(centralwidget);
@@ -408,6 +419,7 @@ public:
         view->addToolBar(Qt::TopToolBarArea, toolBar);
 
         toolBar->addAction(actionMemory_Agent);
+        toolBar->addAction(actionNetwork_Agent);
 
         retranslateUi(view);
 
@@ -418,6 +430,10 @@ public:
     {
         view->setWindowTitle(QCoreApplication::translate("view", "view", nullptr));
         actionMemory_Agent->setText(QCoreApplication::translate("view", "Memory_Agent_off", nullptr));
+        actionNetwork_Agent->setText(QCoreApplication::translate("view", "Network_Agent_off", nullptr));
+#if QT_CONFIG(tooltip)
+        actionNetwork_Agent->setToolTip(QCoreApplication::translate("view", "Network_Agent", nullptr));
+#endif // QT_CONFIG(tooltip)
         cpu_on->setText(QCoreApplication::translate("view", "ON", nullptr));
         cpu_off->setText(QCoreApplication::translate("view", "OFF", nullptr));
         label_2->setText(QCoreApplication::translate("view", "         MEMORY_AGENT", nullptr));

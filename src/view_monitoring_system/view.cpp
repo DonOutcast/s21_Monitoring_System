@@ -73,8 +73,8 @@ auto view::setSlots() -> void {
 
 
 auto view::groupingActionUpperToolBar() ->void {
-  groupActionUpper_->addAction(ui->actionMemory_Agent);
-//  this->groupActionUpper_->addAction(ui->action_upload_images);
+  this->groupActionUpper_->addAction(ui->actionMemory_Agent);
+  this->groupActionUpper_->addAction(ui->actionNetwork_Agent);
 //  this->groupActionUpper_->addAction(ui->actionSettings);
 //  this->groupActionUpper_->addAction(ui->actionUpload_weights);
 //  this->groupActionUpper_->addAction(ui->actionDownload_weights);
@@ -86,9 +86,10 @@ auto view::triggeredGroupActionUpper(QAction *action) -> void {
   if (action == ui->actionMemory_Agent) {
     this->action_memory_agent();
   }
-//  else if (action == ui->action_upload_images) {
-//    this->action_upload_images();
-//  } else if (action == ui->actionSettings) {
+  else if (action == ui->actionNetwork_Agent) {
+    this->action_network_agent();
+  }
+      //else if (action == ui->actionSettings) {
 //    this->settings_on_off();
 //  } else if (action == ui->actionUpload_weights) {
 //      this->action_upload_weights();
@@ -111,5 +112,17 @@ auto view::action_memory_agent() -> void {
 
     }
 
+ }
+
+auto view::action_network_agent() -> void {
+    if (ui->actionNetwork_Agent->iconText() == "Network_Agent_on") {
+        ui->actionNetwork_Agent->setIcon(QIcon(":/images/agent_2_off.png"));
+        ui->actionNetwork_Agent->setIconText("Network_Agent_off");
+    } else {
+      ui->actionNetwork_Agent->setIcon(QIcon(":/images/agent_2_on.png"));
+      ui->actionNetwork_Agent->setIconText("Network_Agent_on");
+
+    }
 
  }
+

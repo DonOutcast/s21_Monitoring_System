@@ -3,5 +3,7 @@
         <file>images/bg.png</file>
         <file>images/agent_1_on.png</file>
         <file>images/agent_1_off.png</file>
+        <file>images/agent_2_off.png</file>
+        <file>images/agent_2_on.png</file>
     </qresource>
 </RCC>

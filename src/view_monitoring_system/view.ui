@@ -691,6 +691,7 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
     <bool>false</bool>
    </attribute>
    <addaction name="actionMemory_Agent"/>
+   <addaction name="actionNetwork_Agent"/>
   </widget>
   <action name="actionMemory_Agent">
    <property name="icon">
@@ -723,6 +724,18 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
    </property>
    <property name="priority">
     <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="actionNetwork_Agent">
+   <property name="icon">
+    <iconset theme="Network_Agent" resource="Resources.qrc">
+     <normaloff>:/images/agent_2_off.png</normaloff>:/images/agent_2_off.png</iconset>
+   </property>
+   <property name="text">
+    <string>Network_Agent_off</string>
+   </property>
+   <property name="toolTip">
+    <string>Network_Agent</string>
    </property>
   </action>
  </widget>

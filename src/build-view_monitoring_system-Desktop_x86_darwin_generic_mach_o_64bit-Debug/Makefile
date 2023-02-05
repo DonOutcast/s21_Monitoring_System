@@ -964,7 +964,9 @@ compiler_rcc_clean:
 qrc_Resources.cpp: ../view_monitoring_system/Resources.qrc \
 		/usr/local/share/qt/libexec/rcc \
 		../view_monitoring_system/images/agent_1_off.png \
+		../view_monitoring_system/images/agent_2_off.png \
 		../view_monitoring_system/images/bg.png \
+		../view_monitoring_system/images/agent_2_on.png \
 		../view_monitoring_system/images/agent_1_on.png
 	/usr/local/share/qt/libexec/rcc -name Resources ../view_monitoring_system/Resources.qrc -o qrc_Resources.cpp
 
@@ -998,6 +1000,8 @@ moc_view.cpp: ../view_monitoring_system/view.h \
 		/usr/local/lib/QtCore.framework/Headers/qdatetime.h \
 		/usr/local/lib/QtGui.framework/Headers/QActionGroup \
 		/usr/local/lib/QtGui.framework/Headers/qactiongroup.h \
+		/usr/local/lib/QtCore.framework/Headers/QDebug \
+		/usr/local/lib/QtCore.framework/Headers/qdebug.h \
 		moc_predefs.h \
 		/usr/local/share/qt/libexec/moc
 	/usr/local/share/qt/libexec/moc $(DEFINES) --include /Users/lymondgl/s21_Monitoring_System/src/build-view_monitoring_system-Desktop_x86_darwin_generic_mach_o_64bit-Debug/moc_predefs.h -I/usr/local/share/qt/mkspecs/macx-clang -I/Users/lymondgl/s21_Monitoring_System/src/view_monitoring_system -I/usr/local/lib/QtWidgets.framework/Headers -I/usr/local/lib/QtGui.framework/Headers -I/usr/local/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.0.0/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/usr/local/lib ../view_monitoring_system/view.h -o moc_view.cpp
@@ -1088,6 +1092,8 @@ main.o: ../view_monitoring_system/main.cpp ../view_monitoring_system/view.h \
 		/usr/local/lib/QtCore.framework/Headers/qdatetime.h \
 		/usr/local/lib/QtGui.framework/Headers/QActionGroup \
 		/usr/local/lib/QtGui.framework/Headers/qactiongroup.h \
+		/usr/local/lib/QtCore.framework/Headers/QDebug \
+		/usr/local/lib/QtCore.framework/Headers/qdebug.h \
 		/usr/local/lib/QtWidgets.framework/Headers/QApplication \
 		/usr/local/lib/QtWidgets.framework/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../view_monitoring_system/main.cpp
@@ -1113,6 +1119,8 @@ view.o: ../view_monitoring_system/view.cpp ../view_monitoring_system/view.h \
 		/usr/local/lib/QtCore.framework/Headers/qdatetime.h \
 		/usr/local/lib/QtGui.framework/Headers/QActionGroup \
 		/usr/local/lib/QtGui.framework/Headers/qactiongroup.h \
+		/usr/local/lib/QtCore.framework/Headers/QDebug \
+		/usr/local/lib/QtCore.framework/Headers/qdebug.h \
 		ui_view.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o view.o ../view_monitoring_system/view.cpp
 
