@@ -9,6 +9,7 @@ view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view),  groupActio
   /*-------------------------------------------------------*/
   this->setSlots();
   ui->groupBox_Memory_Agent->hide();
+  ui->groupBox_Network_Agent->hide();
 
 
 }
@@ -115,10 +116,12 @@ auto view::action_memory_agent() -> void {
 auto view::action_network_agent() -> void {
     if (ui->actionNetwork_Agent->iconText() == "Network_Agent_on") {
         ui->actionNetwork_Agent->setIcon(QIcon(":/images/agent_2_off.png"));
+        ui->groupBox_Network_Agent->hide();
         ui->actionNetwork_Agent->setIconText("Network_Agent_off");
     } else {
       ui->actionNetwork_Agent->setIcon(QIcon(":/images/agent_2_on.png"));
       ui->actionNetwork_Agent->setIconText("Network_Agent_on");
+      ui->groupBox_Network_Agent->show();
 
     }
 

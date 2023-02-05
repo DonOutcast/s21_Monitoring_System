@@ -71,13 +71,17 @@ public:
     QLabel *pLabel_4;
     QLabel *pLabel_5;
     QLabel *label;
+    QGroupBox *groupBox_Network_Agent;
+    QLabel *pLabel_6;
+    QLabel *aLabel_2;
+    QLabel *pLabel_7;
     QToolBar *toolBar;
 
     void setupUi(QMainWindow *view)
     {
         if (view->objectName().isEmpty())
             view->setObjectName(QString::fromUtf8("view"));
-        view->resize(1407, 973);
+        view->resize(1422, 1011);
         view->setMaximumSize(QSize(16777, 16778));
         view->setStyleSheet(QString::fromUtf8("\n"
 "QMainWindow{\n"
@@ -200,7 +204,7 @@ public:
 
         verticalLayoutWidget_2 = new QWidget(centralwidget);
         verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(280, 650, 161, 111));
+        verticalLayoutWidget_2->setGeometry(QRect(1160, 760, 161, 111));
         verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_2);
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -222,7 +226,7 @@ public:
 
         verticalLayoutWidget_3 = new QWidget(centralwidget);
         verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
-        verticalLayoutWidget_3->setGeometry(QRect(460, 650, 161, 111));
+        verticalLayoutWidget_3->setGeometry(QRect(980, 780, 161, 111));
         verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -410,6 +414,59 @@ public:
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(930, 650, 158, 65));
+        groupBox_Network_Agent = new QGroupBox(centralwidget);
+        groupBox_Network_Agent->setObjectName(QString::fromUtf8("groupBox_Network_Agent"));
+        groupBox_Network_Agent->setGeometry(QRect(260, 630, 251, 291));
+        groupBox_Network_Agent->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
+"	font: 16pt ;\n"
+"	font-weight: bold;\n"
+"	color: #FFFFFF;\n"
+"	border-style: solid;\n"
+"	border-width: 4px 4px 4px 4px;\n"
+"border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"}"));
+        pLabel_6 = new QLabel(groupBox_Network_Agent);
+        pLabel_6->setObjectName(QString::fromUtf8("pLabel_6"));
+        pLabel_6->setGeometry(QRect(10, 80, 211, 31));
+        pLabel_6->setFont(font2);
+        pLabel_6->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"	font: 16pt ;\n"
+"	font-weight: bold;\n"
+"	color: #FFFFFF;\n"
+"	border-style: solid;\n"
+"	border-width: 4px 0px 4px 0px;\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"}"));
+        pLabel_6->setAlignment(Qt::AlignCenter);
+        aLabel_2 = new QLabel(groupBox_Network_Agent);
+        aLabel_2->setObjectName(QString::fromUtf8("aLabel_2"));
+        aLabel_2->setGeometry(QRect(10, 30, 211, 31));
+        aLabel_2->setFont(font2);
+        aLabel_2->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"	font: 16pt ;\n"
+"	font-weight: bold;\n"
+"	color: #FFFFFF;\n"
+"	border-style: solid;\n"
+"	border-width: 4px 0px 4px 0px;\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);\n"
+"}"));
+        aLabel_2->setAlignment(Qt::AlignCenter);
+        pLabel_7 = new QLabel(groupBox_Network_Agent);
+        pLabel_7->setObjectName(QString::fromUtf8("pLabel_7"));
+        pLabel_7->setGeometry(QRect(10, 120, 211, 31));
+        pLabel_7->setFont(font2);
+        pLabel_7->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"	font: 16pt ;\n"
+"	font-weight: bold;\n"
+"	color: #FFFFFF;\n"
+"	border-style: solid;\n"
+"	border-width: 4px 0px 4px 0px;\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"}"));
+        pLabel_7->setAlignment(Qt::AlignCenter);
         view->setCentralWidget(centralwidget);
         toolBar = new QToolBar(view);
         toolBar->setObjectName(QString::fromUtf8("toolBar"));
@@ -483,6 +540,10 @@ public:
         pLabel_4->setText(QCoreApplication::translate("view", "Hard Ops", nullptr));
         pLabel_5->setText(QCoreApplication::translate("view", "Hard Throughput", nullptr));
         label->setText(QCoreApplication::translate("view", "         CPU_AGENT", nullptr));
+        groupBox_Network_Agent->setTitle(QCoreApplication::translate("view", "               Network Agent", nullptr));
+        pLabel_6->setText(QCoreApplication::translate("view", "Url", nullptr));
+        aLabel_2->setText(QCoreApplication::translate("view", "Memory Agent", nullptr));
+        pLabel_7->setText(QCoreApplication::translate("view", "Inet Throughput", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("view", "toolBar", nullptr));
     } // retranslateUi
 
