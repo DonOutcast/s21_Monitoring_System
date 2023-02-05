@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1422</width>
-    <height>1011</height>
+    <width>1438</width>
+    <height>1277</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -88,7 +88,7 @@ QTextBrowser{
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>1039</x>
+      <x>1229</x>
       <y>659</y>
       <width>51</width>
       <height>101</height>
@@ -117,8 +117,8 @@ QTextBrowser{
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>1160</x>
-      <y>760</y>
+      <x>1380</x>
+      <y>750</y>
       <width>161</width>
       <height>111</height>
      </rect>
@@ -153,8 +153,8 @@ QTextBrowser{
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>980</x>
-      <y>780</y>
+      <x>1260</x>
+      <y>770</y>
       <width>161</width>
       <height>111</height>
      </rect>
@@ -189,8 +189,8 @@ QTextBrowser{
    <widget class="QWidget" name="verticalLayoutWidget_4">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>650</y>
+      <x>1080</x>
+      <y>790</y>
       <width>161</width>
       <height>111</height>
      </rect>
@@ -225,8 +225,8 @@ QTextBrowser{
    <widget class="QWidget" name="verticalLayoutWidget_5">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>650</y>
+      <x>1110</x>
+      <y>960</y>
       <width>160</width>
       <height>111</height>
      </rect>
@@ -260,7 +260,7 @@ QTextBrowser{
    <widget class="QWidget" name="verticalLayoutWidget_6">
     <property name="geometry">
      <rect>
-      <x>1100</x>
+      <x>1290</x>
       <y>650</y>
       <width>160</width>
       <height>111</height>
@@ -298,10 +298,10 @@ QTextBrowser{
    <widget class="QGroupBox" name="groupBox_Memory_Agent">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>270</x>
       <y>630</y>
       <width>251</width>
-      <height>291</height>
+      <height>471</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -531,8 +531,8 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>930</x>
-      <y>650</y>
+      <x>1080</x>
+      <y>640</y>
       <width>158</width>
       <height>65</height>
      </rect>
@@ -544,7 +544,7 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
    <widget class="QGroupBox" name="groupBox_Network_Agent">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>530</x>
       <y>630</y>
       <width>251</width>
       <height>291</height>
@@ -663,6 +663,542 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="text">
       <string>Inet Throughput</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Cpu_Agent">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>630</y>
+      <width>251</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 4px 4px 4px;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+    </property>
+    <property name="title">
+     <string>               Cpu Agent</string>
+    </property>
+    <widget class="QLabel" name="pLabel_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Cpu</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="aLabel_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);
+}</string>
+     </property>
+     <property name="text">
+      <string>Memory Agent</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Processes</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_Special_Agent">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>630</y>
+      <width>251</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 4px 4px 4px;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+    </property>
+    <property name="title">
+     <string>               Special Agent</string>
+    </property>
+    <widget class="QLabel" name="pLabel_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Priveleged</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="aLabel_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);
+}</string>
+     </property>
+     <property name="text">
+      <string>Memory Agent</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Total Swap</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Used Swap</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Processes ready to run</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Virtual memory voume</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Virtual memory free</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Inodes</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Hard read time</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>System errors</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pLabel_19">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>430</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Umpush</family>
+       <pointsize>16</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	font: 16pt ;
+	font-weight: bold;
+	color: #FFFFFF;
+	border-style: solid;
+	border-width: 4px 0px 4px 0px;
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+}</string>
+     </property>
+     <property name="text">
+      <string>User auths</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

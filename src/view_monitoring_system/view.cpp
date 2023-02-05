@@ -10,6 +10,8 @@ view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view),  groupActio
   this->setSlots();
   ui->groupBox_Memory_Agent->hide();
   ui->groupBox_Network_Agent->hide();
+  ui->groupBox_Cpu_Agent->hide();
+  ui->groupBox_Special_Agent->hide();
 
 
 }
@@ -130,10 +132,12 @@ auto view::action_network_agent() -> void {
 auto view::action_cpu_agent() -> void {
     if (ui->actionCpu_Agent->iconText() == "Network_Agent_on") {
         ui->actionCpu_Agent->setIcon(QIcon(":/images/agent_3_off.png"));
+        ui->groupBox_Cpu_Agent->hide();
         ui->actionCpu_Agent->setIconText("Network_Agent_off");
     } else {
       ui->actionCpu_Agent->setIcon(QIcon(":/images/agent_3_on.png"));
       ui->actionCpu_Agent->setIconText("Network_Agent_on");
+      ui->groupBox_Cpu_Agent->show();
 
     }
 
@@ -142,10 +146,12 @@ auto view::action_cpu_agent() -> void {
 auto view::action_special_agent() -> void {
     if (ui->actionSpecial_Agent->iconText() == "Network_Agent_on") {
         ui->actionSpecial_Agent->setIcon(QIcon(":/images/agent_4_off.png"));
+        ui->groupBox_Special_Agent->hide();
         ui->actionSpecial_Agent->setIconText("Network_Agent_off");
     } else {
       ui->actionSpecial_Agent->setIcon(QIcon(":/images/agent_4_on.png"));
       ui->actionSpecial_Agent->setIconText("Network_Agent_on");
+      ui->groupBox_Special_Agent->show();
 
     }
 
