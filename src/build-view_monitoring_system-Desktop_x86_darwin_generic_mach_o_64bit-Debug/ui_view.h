@@ -68,7 +68,7 @@ public:
     {
         if (view->objectName().isEmpty())
             view->setObjectName(QString::fromUtf8("view"));
-        view->resize(1294, 1277);
+        view->resize(1290, 1005);
         view->setMaximumSize(QSize(16777, 16778));
         view->setStyleSheet(QString::fromUtf8("\n"
 "QMainWindow{\n"
@@ -151,7 +151,7 @@ public:
         textBrowser = new QTextBrowser(centralwidget);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setEnabled(true);
-        textBrowser->setGeometry(QRect(0, 0, 1291, 621));
+        textBrowser->setGeometry(QRect(-1, -1, 1291, 461));
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Ignored);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -174,15 +174,8 @@ public:
         textBrowser->setTextInteractionFlags(Qt::TextEditable);
         groupBox_Memory_Agent = new QGroupBox(centralwidget);
         groupBox_Memory_Agent->setObjectName(QString::fromUtf8("groupBox_Memory_Agent"));
-        groupBox_Memory_Agent->setGeometry(QRect(270, 630, 251, 471));
-        groupBox_Memory_Agent->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"	border-style: solid;\n"
-"	border-width: 4px 4px 4px 4px;\n"
-"border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"}"));
+        groupBox_Memory_Agent->setGeometry(QRect(270, 470, 251, 471));
+        groupBox_Memory_Agent->setStyleSheet(QString::fromUtf8(""));
         pLabel = new QLabel(groupBox_Memory_Agent);
         pLabel->setObjectName(QString::fromUtf8("pLabel"));
         pLabel->setGeometry(QRect(10, 80, 211, 31));
@@ -194,11 +187,11 @@ public:
         pLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel->setAlignment(Qt::AlignCenter);
         aLabel = new QLabel(groupBox_Memory_Agent);
@@ -208,11 +201,11 @@ public:
         aLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: #670F0F;\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         aLabel->setAlignment(Qt::AlignCenter);
         pLabel_2 = new QLabel(groupBox_Memory_Agent);
@@ -222,11 +215,11 @@ public:
         pLabel_2->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_2->setAlignment(Qt::AlignCenter);
         pLabel_3 = new QLabel(groupBox_Memory_Agent);
@@ -236,11 +229,11 @@ public:
         pLabel_3->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_3->setAlignment(Qt::AlignCenter);
         pLabel_4 = new QLabel(groupBox_Memory_Agent);
@@ -250,11 +243,11 @@ public:
         pLabel_4->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_4->setAlignment(Qt::AlignCenter);
         pLabel_5 = new QLabel(groupBox_Memory_Agent);
@@ -264,24 +257,17 @@ public:
         pLabel_5->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_5->setAlignment(Qt::AlignCenter);
         groupBox_Network_Agent = new QGroupBox(centralwidget);
         groupBox_Network_Agent->setObjectName(QString::fromUtf8("groupBox_Network_Agent"));
-        groupBox_Network_Agent->setGeometry(QRect(530, 630, 251, 291));
-        groupBox_Network_Agent->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"	border-style: solid;\n"
-"	border-width: 4px 4px 4px 4px;\n"
-"border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"}"));
+        groupBox_Network_Agent->setGeometry(QRect(530, 470, 251, 291));
+        groupBox_Network_Agent->setStyleSheet(QString::fromUtf8(""));
         pLabel_6 = new QLabel(groupBox_Network_Agent);
         pLabel_6->setObjectName(QString::fromUtf8("pLabel_6"));
         pLabel_6->setGeometry(QRect(10, 80, 211, 31));
@@ -289,11 +275,11 @@ public:
         pLabel_6->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_6->setAlignment(Qt::AlignCenter);
         aLabel_2 = new QLabel(groupBox_Network_Agent);
@@ -303,11 +289,11 @@ public:
         aLabel_2->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: #670F0F;\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         aLabel_2->setAlignment(Qt::AlignCenter);
         pLabel_7 = new QLabel(groupBox_Network_Agent);
@@ -317,24 +303,17 @@ public:
         pLabel_7->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_7->setAlignment(Qt::AlignCenter);
         groupBox_Cpu_Agent = new QGroupBox(centralwidget);
         groupBox_Cpu_Agent->setObjectName(QString::fromUtf8("groupBox_Cpu_Agent"));
-        groupBox_Cpu_Agent->setGeometry(QRect(790, 630, 251, 291));
-        groupBox_Cpu_Agent->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"	border-style: solid;\n"
-"	border-width: 4px 4px 4px 4px;\n"
-"border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"}"));
+        groupBox_Cpu_Agent->setGeometry(QRect(790, 470, 251, 291));
+        groupBox_Cpu_Agent->setStyleSheet(QString::fromUtf8(""));
         pLabel_8 = new QLabel(groupBox_Cpu_Agent);
         pLabel_8->setObjectName(QString::fromUtf8("pLabel_8"));
         pLabel_8->setGeometry(QRect(10, 70, 211, 31));
@@ -342,11 +321,11 @@ public:
         pLabel_8->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_8->setAlignment(Qt::AlignCenter);
         aLabel_3 = new QLabel(groupBox_Cpu_Agent);
@@ -356,11 +335,11 @@ public:
         aLabel_3->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: #670F0F;\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         aLabel_3->setAlignment(Qt::AlignCenter);
         pLabel_9 = new QLabel(groupBox_Cpu_Agent);
@@ -370,24 +349,17 @@ public:
         pLabel_9->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_9->setAlignment(Qt::AlignCenter);
         groupBox_Special_Agent = new QGroupBox(centralwidget);
         groupBox_Special_Agent->setObjectName(QString::fromUtf8("groupBox_Special_Agent"));
-        groupBox_Special_Agent->setGeometry(QRect(10, 630, 251, 471));
-        groupBox_Special_Agent->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"	border-style: solid;\n"
-"	border-width: 4px 4px 4px 4px;\n"
-"border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"}"));
+        groupBox_Special_Agent->setGeometry(QRect(10, 460, 251, 471));
+        groupBox_Special_Agent->setStyleSheet(QString::fromUtf8(""));
         pLabel_10 = new QLabel(groupBox_Special_Agent);
         pLabel_10->setObjectName(QString::fromUtf8("pLabel_10"));
         pLabel_10->setGeometry(QRect(10, 70, 211, 31));
@@ -395,11 +367,11 @@ public:
         pLabel_10->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_10->setAlignment(Qt::AlignCenter);
         aLabel_4 = new QLabel(groupBox_Special_Agent);
@@ -409,11 +381,11 @@ public:
         aLabel_4->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: #670F0F;\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         aLabel_4->setAlignment(Qt::AlignCenter);
         pLabel_11 = new QLabel(groupBox_Special_Agent);
@@ -423,11 +395,11 @@ public:
         pLabel_11->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_11->setAlignment(Qt::AlignCenter);
         pLabel_12 = new QLabel(groupBox_Special_Agent);
@@ -437,11 +409,11 @@ public:
         pLabel_12->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_12->setAlignment(Qt::AlignCenter);
         pLabel_13 = new QLabel(groupBox_Special_Agent);
@@ -451,11 +423,11 @@ public:
         pLabel_13->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_13->setAlignment(Qt::AlignCenter);
         pLabel_14 = new QLabel(groupBox_Special_Agent);
@@ -465,11 +437,11 @@ public:
         pLabel_14->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_14->setAlignment(Qt::AlignCenter);
         pLabel_15 = new QLabel(groupBox_Special_Agent);
@@ -479,11 +451,11 @@ public:
         pLabel_15->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_15->setAlignment(Qt::AlignCenter);
         pLabel_16 = new QLabel(groupBox_Special_Agent);
@@ -493,11 +465,11 @@ public:
         pLabel_16->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_16->setAlignment(Qt::AlignCenter);
         pLabel_17 = new QLabel(groupBox_Special_Agent);
@@ -507,11 +479,11 @@ public:
         pLabel_17->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_17->setAlignment(Qt::AlignCenter);
         pLabel_18 = new QLabel(groupBox_Special_Agent);
@@ -521,11 +493,11 @@ public:
         pLabel_18->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_18->setAlignment(Qt::AlignCenter);
         pLabel_19 = new QLabel(groupBox_Special_Agent);
@@ -535,23 +507,23 @@ public:
         pLabel_19->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
+"	color: rgb(0, 191, 16);\n"
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         pLabel_19->setAlignment(Qt::AlignCenter);
         groupBox_Timer = new QGroupBox(centralwidget);
         groupBox_Timer->setObjectName(QString::fromUtf8("groupBox_Timer"));
-        groupBox_Timer->setGeometry(QRect(530, 930, 251, 171));
+        groupBox_Timer->setGeometry(QRect(530, 770, 251, 171));
         groupBox_Timer->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
 "	color: #FFFFFF;\n"
 "	border-style: solid;\n"
 "	border-width: 4px 4px 4px 4px;\n"
-"border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);\n"
 "}"));
         time_upd = new QSpinBox(groupBox_Timer);
         time_upd->setObjectName(QString::fromUtf8("time_upd"));
@@ -575,10 +547,10 @@ public:
         toolBar->setIconSize(QSize(100, 50));
         view->addToolBar(Qt::TopToolBarArea, toolBar);
 
+        toolBar->addAction(actionSpecial_Agent);
         toolBar->addAction(actionMemory_Agent);
         toolBar->addAction(actionNetwork_Agent);
         toolBar->addAction(actionCpu_Agent);
-        toolBar->addAction(actionSpecial_Agent);
         toolBar->addAction(actionStart_all);
         toolBar->addAction(actionTimer);
 
@@ -614,24 +586,24 @@ public:
 #if QT_CONFIG(tooltip)
         actionTimer->setToolTip(QCoreApplication::translate("view", "Timer_off", nullptr));
 #endif // QT_CONFIG(tooltip)
-        groupBox_Memory_Agent->setTitle(QCoreApplication::translate("view", "                Memory Agent", nullptr));
+        groupBox_Memory_Agent->setTitle(QString());
         pLabel->setText(QCoreApplication::translate("view", "Ram", nullptr));
         aLabel->setText(QCoreApplication::translate("view", "Memory Agent", nullptr));
         pLabel_2->setText(QCoreApplication::translate("view", "Ram Total", nullptr));
         pLabel_3->setText(QCoreApplication::translate("view", "Hard Volume", nullptr));
         pLabel_4->setText(QCoreApplication::translate("view", "Hard Ops", nullptr));
         pLabel_5->setText(QCoreApplication::translate("view", "Hard Throughput", nullptr));
-        groupBox_Network_Agent->setTitle(QCoreApplication::translate("view", "               Network Agent", nullptr));
+        groupBox_Network_Agent->setTitle(QString());
         pLabel_6->setText(QCoreApplication::translate("view", "Url", nullptr));
-        aLabel_2->setText(QCoreApplication::translate("view", "Memory Agent", nullptr));
+        aLabel_2->setText(QCoreApplication::translate("view", "Network Agent", nullptr));
         pLabel_7->setText(QCoreApplication::translate("view", "Inet Throughput", nullptr));
-        groupBox_Cpu_Agent->setTitle(QCoreApplication::translate("view", "               Cpu Agent", nullptr));
+        groupBox_Cpu_Agent->setTitle(QString());
         pLabel_8->setText(QCoreApplication::translate("view", "Cpu", nullptr));
-        aLabel_3->setText(QCoreApplication::translate("view", "Memory Agent", nullptr));
+        aLabel_3->setText(QCoreApplication::translate("view", "CPU Agent", nullptr));
         pLabel_9->setText(QCoreApplication::translate("view", "Processes", nullptr));
-        groupBox_Special_Agent->setTitle(QCoreApplication::translate("view", "               Special Agent", nullptr));
+        groupBox_Special_Agent->setTitle(QString());
         pLabel_10->setText(QCoreApplication::translate("view", "Priveleged", nullptr));
-        aLabel_4->setText(QCoreApplication::translate("view", "Memory Agent", nullptr));
+        aLabel_4->setText(QCoreApplication::translate("view", "Special Agent", nullptr));
         pLabel_11->setText(QCoreApplication::translate("view", "Total Swap", nullptr));
         pLabel_12->setText(QCoreApplication::translate("view", "Used Swap", nullptr));
         pLabel_13->setText(QCoreApplication::translate("view", "Processes ready to run", nullptr));

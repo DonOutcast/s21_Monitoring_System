@@ -1331,3 +1331,33 @@
 15:0:7 memory_agent | ram_total : 16 | ram : 11.57 | hard_volume : 217 | hard_ops : 49.55 | hard_throughput : 26.18
 15:0:7 network_agent | https://edu.21-school.ru : available | inet_throughput : 134.53
 15:0:7 dop_agent | privileged : 0.01 | total_swap : 0 | used_swap : 0 | proc_queue_length : 476 | virtual_mem_volume : 957 | virtual_mem_free : 710 | inodes : 55360 | hard_read_time : 0.44 | system_errors : 45 | user_auths : 93
+16:58:54 cpu_agent | cpu : 4.8 | processes : 367
+16:58:55 memory_agent | ram_total : 16 | ram : 4.16 | hard_volume : 471 | hard_ops : 28.69 | hard_throughput : 30.63
+16:58:55 network_agent | https://edu.21-school.ru : available | inet_throughput : 253.01
+16:58:57 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 365 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160
+17:3:14 cpu_agent | cpu : 2.4 | processes : 382
+17:3:14 memory_agent | ram_total : 16 | ram : 5.13 | hard_volume : 471 | hard_ops : 28.69 | hard_throughput : 27.13
+17:3:14 network_agent | https://edu.21-school.ru : available | inet_throughput : 253.01
+17:3:14 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 380 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160
+17:3:21 cpu_agent | cpu : 3.65 | processes : 382
+17:3:22 memory_agent | ram_total : 16 | ram : 5.13 | hard_volume : 471 | hard_ops : 28.69 | hard_throughput : 27.09
+17:3:22 network_agent | https://edu.21-school.ru : available | inet_throughput : 253.01
+17:3:22 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 381 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160
+17:5:51 cpu_agent | cpu : 4.34 | processes : 386
+17:5:52 memory_agent | ram_total : 16 | ram : 5.49 | hard_volume : 471 | hard_ops : 28.69 | hard_throughput : 26.68
+17:5:52 network_agent | https://edu.21-school.ru : available | inet_throughput : 253.02
+17:5:52 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 384 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160
+17:29:59 cpu_agent | cpu : 8.33 | processes : 394
+17:29:59 memory_agent | ram_total : 16 | ram : 6.7 | hard_volume : 471 | hard_ops : 28.69 | hard_throughput : 24.33
+17:29:59 network_agent | https://edu.21-school.ru : available | inet_throughput : 253.03
+17:30:0 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 391 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160
+17:30:11 cpu_agent | cpu : 3.17 | processes : 394
+17:30:11 memory_agent | ram_total : 16 | ram : 6.67 | hard_volume : 471 | hard_ops : 28.69 | hard_throughput : 24.33
+17:30:11 network_agent | https://edu.21-school.ru : available | inet_throughput : 253.03
+17:30:11 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 393 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160
+17:30:17 cpu_agent | cpu : 3.81 | processes : 394
+17:30:17 memory_agent | ram_total : 16 | ram : 6.67 | hard_volume : 471 | hard_ops : 28.69 | hard_throughput : 24.31
+17:30:17 network_agent | https://edu.21-school.ru : available | inet_throughput : 253.03
+17:30:17 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 392 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160
+17:31:41 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 393 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160
+17:31:51 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 392 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.92 | system_errors : 47 | user_auths : 160

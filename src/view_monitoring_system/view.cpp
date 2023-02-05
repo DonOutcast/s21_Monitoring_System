@@ -7,6 +7,7 @@ view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view),  groupActio
   /*---группировка actions находящихся на верхнем toolBar---*/
   this->groupingActionUpperToolBar();
   /*-------------------------------------------------------*/
+  this->setFixedSize(1290, 1005);
   this->setSlots();
   ui->groupBox_Memory_Agent->hide();
   ui->groupBox_Network_Agent->hide();

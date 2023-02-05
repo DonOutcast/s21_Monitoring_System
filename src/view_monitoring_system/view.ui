@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1294</width>
-    <height>1277</height>
+    <width>1290</width>
+    <height>1005</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -39,10 +39,10 @@ background-image: url(:/images/bg.png);
     </property>
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
+      <x>-1</x>
+      <y>-1</y>
       <width>1291</width>
-      <height>621</height>
+      <height>461</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -89,23 +89,16 @@ QTextBrowser{
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>630</y>
+      <y>470</y>
       <width>251</width>
       <height>471</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QGroupBox {
-	font: 16pt ;
-	font-weight: bold;
-	color: #FFFFFF;
-	border-style: solid;
-	border-width: 4px 4px 4px 4px;
-border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-}</string>
+     <string notr="true"/>
     </property>
     <property name="title">
-     <string>                Memory Agent</string>
+     <string/>
     </property>
     <widget class="QLabel" name="pLabel">
      <property name="geometry">
@@ -127,11 +120,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -161,11 +154,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: #670F0F;
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -195,11 +188,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -229,11 +222,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -263,11 +256,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -297,11 +290,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -316,23 +309,16 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
     <property name="geometry">
      <rect>
       <x>530</x>
-      <y>630</y>
+      <y>470</y>
       <width>251</width>
       <height>291</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QGroupBox {
-	font: 16pt ;
-	font-weight: bold;
-	color: #FFFFFF;
-	border-style: solid;
-	border-width: 4px 4px 4px 4px;
-border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-}</string>
+     <string notr="true"/>
     </property>
     <property name="title">
-     <string>               Network Agent</string>
+     <string>              </string>
     </property>
     <widget class="QLabel" name="pLabel_6">
      <property name="geometry">
@@ -354,11 +340,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -388,15 +374,15 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: #670F0F;
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
-      <string>Memory Agent</string>
+      <string>Network Agent</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -422,11 +408,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -441,23 +427,16 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
     <property name="geometry">
      <rect>
       <x>790</x>
-      <y>630</y>
+      <y>470</y>
       <width>251</width>
       <height>291</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QGroupBox {
-	font: 16pt ;
-	font-weight: bold;
-	color: #FFFFFF;
-	border-style: solid;
-	border-width: 4px 4px 4px 4px;
-border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-}</string>
+     <string notr="true"/>
     </property>
     <property name="title">
-     <string>               Cpu Agent</string>
+     <string/>
     </property>
     <widget class="QLabel" name="pLabel_8">
      <property name="geometry">
@@ -479,11 +458,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -513,15 +492,15 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: #670F0F;
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
-      <string>Memory Agent</string>
+      <string>CPU Agent</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -547,11 +526,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -566,23 +545,16 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>630</y>
+      <y>460</y>
       <width>251</width>
       <height>471</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">QGroupBox {
-	font: 16pt ;
-	font-weight: bold;
-	color: #FFFFFF;
-	border-style: solid;
-	border-width: 4px 4px 4px 4px;
-border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-}</string>
+     <string notr="true"/>
     </property>
     <property name="title">
-     <string>               Special Agent</string>
+     <string/>
     </property>
     <widget class="QLabel" name="pLabel_10">
      <property name="geometry">
@@ -604,11 +576,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -638,15 +610,15 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: #670F0F;
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
-      <string>Memory Agent</string>
+      <string>Special Agent</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -672,11 +644,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -706,11 +678,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -740,11 +712,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -774,11 +746,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -808,11 +780,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -842,11 +814,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -876,11 +848,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -910,11 +882,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -944,11 +916,11 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <string notr="true">QLabel {
 	font: 16pt ;
 	font-weight: bold;
-	color: #FFFFFF;
+	color: rgb(0, 191, 16);
 	border-style: solid;
 	border-width: 4px 0px 4px 0px;
-	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D, stop:1 #81A9E3);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
      </property>
      <property name="text">
@@ -963,7 +935,7 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
     <property name="geometry">
      <rect>
       <x>530</x>
-      <y>930</y>
+      <y>770</y>
       <width>251</width>
       <height>171</height>
      </rect>
@@ -975,7 +947,7 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
 	color: #FFFFFF;
 	border-style: solid;
 	border-width: 4px 4px 4px 4px;
-border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #06153D , stop:1 #81A9E3);
 }</string>
     </property>
     <property name="title">
@@ -1033,10 +1005,10 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionSpecial_Agent"/>
    <addaction name="actionMemory_Agent"/>
    <addaction name="actionNetwork_Agent"/>
    <addaction name="actionCpu_Agent"/>
-   <addaction name="actionSpecial_Agent"/>
    <addaction name="actionStart_all"/>
    <addaction name="actionTimer"/>
   </widget>
