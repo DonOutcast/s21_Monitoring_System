@@ -5,5 +5,7 @@
         <file>images/agent_1_off.png</file>
         <file>images/agent_2_off.png</file>
         <file>images/agent_2_on.png</file>
+        <file>images/agent_3_off.png</file>
+        <file>images/agent_3_on.png</file>
     </qresource>
 </RCC>
