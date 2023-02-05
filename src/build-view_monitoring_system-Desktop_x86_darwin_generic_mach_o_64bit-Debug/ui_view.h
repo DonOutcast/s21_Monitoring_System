@@ -63,17 +63,13 @@ public:
     QVBoxLayout *verticalLayout_6;
     QPushButton *start;
     QPushButton *stop;
-    QGroupBox *groupBox_Metrics;
-    QLabel *tLabel;
-    QLabel *recallLabel;
+    QGroupBox *groupBox_Memory_Agent;
     QLabel *pLabel;
     QLabel *aLabel;
-    QLabel *accuracyLabel;
-    QLabel *timeLabel;
-    QLabel *rLabel;
-    QLabel *measureLabel;
-    QLabel *fLabel;
-    QLabel *precisionLabel;
+    QLabel *pLabel_2;
+    QLabel *pLabel_3;
+    QLabel *pLabel_4;
+    QLabel *pLabel_5;
     QLabel *label;
     QToolBar *toolBar;
 
@@ -164,7 +160,7 @@ public:
         textBrowser = new QTextBrowser(centralwidget);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setEnabled(true);
-        textBrowser->setGeometry(QRect(10, 80, 1291, 541));
+        textBrowser->setGeometry(QRect(10, 0, 1291, 621));
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Ignored);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -311,10 +307,10 @@ public:
 
         verticalLayout_6->addWidget(stop);
 
-        groupBox_Metrics = new QGroupBox(centralwidget);
-        groupBox_Metrics->setObjectName(QString::fromUtf8("groupBox_Metrics"));
-        groupBox_Metrics->setGeometry(QRect(10, 620, 261, 161));
-        groupBox_Metrics->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
+        groupBox_Memory_Agent = new QGroupBox(centralwidget);
+        groupBox_Memory_Agent->setObjectName(QString::fromUtf8("groupBox_Memory_Agent"));
+        groupBox_Memory_Agent->setGeometry(QRect(0, 630, 251, 291));
+        groupBox_Memory_Agent->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
 "	color: #FFFFFF;\n"
@@ -322,38 +318,14 @@ public:
 "	border-width: 4px 4px 4px 4px;\n"
 "border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "}"));
-        tLabel = new QLabel(groupBox_Metrics);
-        tLabel->setObjectName(QString::fromUtf8("tLabel"));
-        tLabel->setGeometry(QRect(280, 80, 211, 31));
+        pLabel = new QLabel(groupBox_Memory_Agent);
+        pLabel->setObjectName(QString::fromUtf8("pLabel"));
+        pLabel->setGeometry(QRect(10, 80, 211, 31));
         QFont font2;
         font2.setFamilies({QString::fromUtf8("Umpush")});
         font2.setPointSize(16);
         font2.setBold(true);
         font2.setItalic(false);
-        tLabel->setFont(font2);
-        tLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"	border-style: solid;\n"
-"	border-width: 4px 0px 4px 0px;\n"
-"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"}"));
-        tLabel->setAlignment(Qt::AlignCenter);
-        recallLabel = new QLabel(groupBox_Metrics);
-        recallLabel->setObjectName(QString::fromUtf8("recallLabel"));
-        recallLabel->setGeometry(QRect(490, 30, 51, 31));
-        recallLabel->setFont(font2);
-        recallLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"}"));
-        recallLabel->setAlignment(Qt::AlignCenter);
-        pLabel = new QLabel(groupBox_Metrics);
-        pLabel->setObjectName(QString::fromUtf8("pLabel"));
-        pLabel->setGeometry(QRect(10, 80, 211, 31));
         pLabel->setFont(font2);
         pLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
@@ -365,7 +337,7 @@ public:
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "}"));
         pLabel->setAlignment(Qt::AlignCenter);
-        aLabel = new QLabel(groupBox_Metrics);
+        aLabel = new QLabel(groupBox_Memory_Agent);
         aLabel->setObjectName(QString::fromUtf8("aLabel"));
         aLabel->setGeometry(QRect(10, 30, 211, 31));
         aLabel->setFont(font2);
@@ -376,34 +348,14 @@ public:
 "	border-style: solid;\n"
 "	border-width: 4px 0px 4px 0px;\n"
 "	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
-"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #00cc00, stop:1 #0000ff);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #0033cc stop:1 #ff3300);\n"
 "}"));
         aLabel->setAlignment(Qt::AlignCenter);
-        accuracyLabel = new QLabel(groupBox_Metrics);
-        accuracyLabel->setObjectName(QString::fromUtf8("accuracyLabel"));
-        accuracyLabel->setGeometry(QRect(220, 30, 51, 31));
-        accuracyLabel->setFont(font2);
-        accuracyLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"}"));
-        accuracyLabel->setAlignment(Qt::AlignCenter);
-        timeLabel = new QLabel(groupBox_Metrics);
-        timeLabel->setObjectName(QString::fromUtf8("timeLabel"));
-        timeLabel->setGeometry(QRect(760, 30, 51, 31));
-        timeLabel->setFont(font2);
-        timeLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"}"));
-        timeLabel->setAlignment(Qt::AlignCenter);
-        rLabel = new QLabel(groupBox_Metrics);
-        rLabel->setObjectName(QString::fromUtf8("rLabel"));
-        rLabel->setGeometry(QRect(280, 30, 211, 31));
-        rLabel->setFont(font2);
-        rLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
+        pLabel_2 = new QLabel(groupBox_Memory_Agent);
+        pLabel_2->setObjectName(QString::fromUtf8("pLabel_2"));
+        pLabel_2->setGeometry(QRect(10, 120, 211, 31));
+        pLabel_2->setFont(font2);
+        pLabel_2->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
 "	color: #FFFFFF;\n"
@@ -412,22 +364,12 @@ public:
 "	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "}"));
-        rLabel->setAlignment(Qt::AlignCenter);
-        measureLabel = new QLabel(groupBox_Metrics);
-        measureLabel->setObjectName(QString::fromUtf8("measureLabel"));
-        measureLabel->setGeometry(QRect(490, 80, 51, 31));
-        measureLabel->setFont(font2);
-        measureLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
-"	font: 16pt ;\n"
-"	font-weight: bold;\n"
-"	color: #FFFFFF;\n"
-"}"));
-        measureLabel->setAlignment(Qt::AlignCenter);
-        fLabel = new QLabel(groupBox_Metrics);
-        fLabel->setObjectName(QString::fromUtf8("fLabel"));
-        fLabel->setGeometry(QRect(550, 30, 211, 31));
-        fLabel->setFont(font2);
-        fLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
+        pLabel_2->setAlignment(Qt::AlignCenter);
+        pLabel_3 = new QLabel(groupBox_Memory_Agent);
+        pLabel_3->setObjectName(QString::fromUtf8("pLabel_3"));
+        pLabel_3->setGeometry(QRect(10, 160, 211, 31));
+        pLabel_3->setFont(font2);
+        pLabel_3->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
 "	color: #FFFFFF;\n"
@@ -436,17 +378,35 @@ public:
 "	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "}"));
-        fLabel->setAlignment(Qt::AlignCenter);
-        precisionLabel = new QLabel(groupBox_Metrics);
-        precisionLabel->setObjectName(QString::fromUtf8("precisionLabel"));
-        precisionLabel->setGeometry(QRect(220, 80, 51, 31));
-        precisionLabel->setFont(font2);
-        precisionLabel->setStyleSheet(QString::fromUtf8("QLabel {\n"
+        pLabel_3->setAlignment(Qt::AlignCenter);
+        pLabel_4 = new QLabel(groupBox_Memory_Agent);
+        pLabel_4->setObjectName(QString::fromUtf8("pLabel_4"));
+        pLabel_4->setGeometry(QRect(10, 200, 211, 31));
+        pLabel_4->setFont(font2);
+        pLabel_4->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "	font: 16pt ;\n"
 "	font-weight: bold;\n"
 "	color: #FFFFFF;\n"
+"	border-style: solid;\n"
+"	border-width: 4px 0px 4px 0px;\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "}"));
-        precisionLabel->setAlignment(Qt::AlignCenter);
+        pLabel_4->setAlignment(Qt::AlignCenter);
+        pLabel_5 = new QLabel(groupBox_Memory_Agent);
+        pLabel_5->setObjectName(QString::fromUtf8("pLabel_5"));
+        pLabel_5->setGeometry(QRect(10, 240, 211, 31));
+        pLabel_5->setFont(font2);
+        pLabel_5->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"	font: 16pt ;\n"
+"	font-weight: bold;\n"
+"	color: #FFFFFF;\n"
+"	border-style: solid;\n"
+"	border-width: 4px 0px 4px 0px;\n"
+"	border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"}"));
+        pLabel_5->setAlignment(Qt::AlignCenter);
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(930, 650, 158, 65));
@@ -478,6 +438,9 @@ public:
     {
         view->setWindowTitle(QCoreApplication::translate("view", "view", nullptr));
         actionMemory_Agent->setText(QCoreApplication::translate("view", "Memory_Agent_off", nullptr));
+#if QT_CONFIG(tooltip)
+        actionMemory_Agent->setToolTip(QCoreApplication::translate("view", "Memory_Agent", nullptr));
+#endif // QT_CONFIG(tooltip)
         actionNetwork_Agent->setText(QCoreApplication::translate("view", "Network_Agent_off", nullptr));
 #if QT_CONFIG(tooltip)
         actionNetwork_Agent->setToolTip(QCoreApplication::translate("view", "Network_Agent", nullptr));
@@ -512,17 +475,13 @@ public:
         label_5->setText(QCoreApplication::translate("view", "TIME TO UPDATE", nullptr));
         start->setText(QCoreApplication::translate("view", "start", nullptr));
         stop->setText(QCoreApplication::translate("view", "stop", nullptr));
-        groupBox_Metrics->setTitle(QCoreApplication::translate("view", "Metrics", nullptr));
-        tLabel->setText(QCoreApplication::translate("view", "TIME", nullptr));
-        recallLabel->setText(QCoreApplication::translate("view", "0", nullptr));
-        pLabel->setText(QCoreApplication::translate("view", "PRECISION", nullptr));
-        aLabel->setText(QCoreApplication::translate("view", "AVERAGE ACCURACY", nullptr));
-        accuracyLabel->setText(QCoreApplication::translate("view", "0", nullptr));
-        timeLabel->setText(QCoreApplication::translate("view", "0", nullptr));
-        rLabel->setText(QCoreApplication::translate("view", "RECALL", nullptr));
-        measureLabel->setText(QCoreApplication::translate("view", "0", nullptr));
-        fLabel->setText(QCoreApplication::translate("view", "F-MEASURE", nullptr));
-        precisionLabel->setText(QCoreApplication::translate("view", "0", nullptr));
+        groupBox_Memory_Agent->setTitle(QCoreApplication::translate("view", "                Memory Agent", nullptr));
+        pLabel->setText(QCoreApplication::translate("view", "Ram", nullptr));
+        aLabel->setText(QCoreApplication::translate("view", "Memory Agent", nullptr));
+        pLabel_2->setText(QCoreApplication::translate("view", "Ram Total", nullptr));
+        pLabel_3->setText(QCoreApplication::translate("view", "Hard Volume", nullptr));
+        pLabel_4->setText(QCoreApplication::translate("view", "Hard Ops", nullptr));
+        pLabel_5->setText(QCoreApplication::translate("view", "Hard Throughput", nullptr));
         label->setText(QCoreApplication::translate("view", "         CPU_AGENT", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("view", "toolBar", nullptr));
     } // retranslateUi

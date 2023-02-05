@@ -8,7 +8,7 @@ view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view),  groupActio
   this->groupingActionUpperToolBar();
   /*-------------------------------------------------------*/
   this->setSlots();
-
+  ui->groupBox_Memory_Agent->hide();
 
 
 }
@@ -101,10 +101,12 @@ auto view::triggeredGroupActionUpper(QAction *action) -> void {
 auto view::action_memory_agent() -> void {
     if (ui->actionMemory_Agent->iconText() == "Memory_Agent_on") {
         ui->actionMemory_Agent->setIcon(QIcon(":/images/agent_1_off.png"));
+        ui->groupBox_Memory_Agent->hide();
         ui->actionMemory_Agent->setIconText("Memory_Agent_off");
     } else {
       ui->actionMemory_Agent->setIcon(QIcon(":/images/agent_1_on.png"));
       ui->actionMemory_Agent->setIconText("Memory_Agent_on");
+      ui->groupBox_Memory_Agent->show();
 
     }
 

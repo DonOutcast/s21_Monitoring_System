@@ -1204,3 +1204,7 @@
 9:50:23 memory_agent | ram_total : 16 | ram : 8.7 | hard_volume : 1.6 | hard_ops : 50.44 | hard_throughput : 40.59
 9:50:23 network_agent | https://edu.21-school.ru : available | inet_throughput : 133.37
 9:50:23 dop_agent | privileged : 0 | total_swap : 0 | used_swap : 0 | proc_queue_length : 463 | virtual_mem_volume : 957 | virtual_mem_free : 710 | inodes : 55360 | hard_read_time : 0.44 | system_errors : 45 | user_auths : 93
+11:38:49 cpu_agent | cpu : 3.82 | processes : 471
+11:38:50 memory_agent | ram_total : 16 | ram : 13.95 | hard_volume : 471 | hard_ops : 28.71 | hard_throughput : 19.54
+11:38:50 network_agent | https://edu.21-school.ru : available | inet_throughput : 247.87
+11:38:52 dop_agent | privileged : 0 | total_swap : 1536 | used_swap : 57.5 | proc_queue_length : 470 | virtual_mem_volume : 957 | virtual_mem_free : 726 | inodes : 55360 | hard_read_time : 0.91 | system_errors : 47 | user_auths : 141
