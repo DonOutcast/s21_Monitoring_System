@@ -55,10 +55,6 @@ public:
     QLabel *label_4;
     QRadioButton *dop_on;
     QRadioButton *dop_off;
-    QWidget *verticalLayoutWidget_5;
-    QVBoxLayout *verticalLayout_5;
-    QLabel *label_5;
-    QSpinBox *time_upd;
     QWidget *verticalLayoutWidget_6;
     QVBoxLayout *verticalLayout_6;
     QPushButton *start;
@@ -91,6 +87,8 @@ public:
     QLabel *pLabel_17;
     QLabel *pLabel_18;
     QLabel *pLabel_19;
+    QGroupBox *groupBox_Timer;
+    QSpinBox *time_upd;
     QToolBar *toolBar;
 
     void setupUi(QMainWindow *view)
@@ -284,29 +282,6 @@ public:
 
         verticalLayout_4->addWidget(dop_off);
 
-        verticalLayoutWidget_5 = new QWidget(centralwidget);
-        verticalLayoutWidget_5->setObjectName(QString::fromUtf8("verticalLayoutWidget_5"));
-        verticalLayoutWidget_5->setGeometry(QRect(1110, 960, 160, 111));
-        verticalLayout_5 = new QVBoxLayout(verticalLayoutWidget_5);
-        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
-        verticalLayout_5->setContentsMargins(0, 0, 0, 0);
-        label_5 = new QLabel(verticalLayoutWidget_5);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-
-        verticalLayout_5->addWidget(label_5);
-
-        time_upd = new QSpinBox(verticalLayoutWidget_5);
-        time_upd->setObjectName(QString::fromUtf8("time_upd"));
-        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(time_upd->sizePolicy().hasHeightForWidth());
-        time_upd->setSizePolicy(sizePolicy1);
-        time_upd->setMinimum(6000);
-        time_upd->setMaximum(60000);
-
-        verticalLayout_5->addWidget(time_upd);
-
         verticalLayoutWidget_6 = new QWidget(centralwidget);
         verticalLayoutWidget_6->setObjectName(QString::fromUtf8("verticalLayoutWidget_6"));
         verticalLayoutWidget_6->setGeometry(QRect(1290, 650, 160, 111));
@@ -315,6 +290,9 @@ public:
         verticalLayout_6->setContentsMargins(0, 0, 0, 0);
         start = new QPushButton(verticalLayoutWidget_6);
         start->setObjectName(QString::fromUtf8("start"));
+        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(start->sizePolicy().hasHeightForWidth());
         start->setSizePolicy(sizePolicy1);
 
@@ -701,6 +679,24 @@ public:
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "}"));
         pLabel_19->setAlignment(Qt::AlignCenter);
+        groupBox_Timer = new QGroupBox(centralwidget);
+        groupBox_Timer->setObjectName(QString::fromUtf8("groupBox_Timer"));
+        groupBox_Timer->setGeometry(QRect(530, 930, 251, 171));
+        groupBox_Timer->setStyleSheet(QString::fromUtf8("QGroupBox {\n"
+"	font: 16pt ;\n"
+"	font-weight: bold;\n"
+"	color: #FFFFFF;\n"
+"	border-style: solid;\n"
+"	border-width: 4px 4px 4px 4px;\n"
+"border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
+"}"));
+        time_upd = new QSpinBox(groupBox_Timer);
+        time_upd->setObjectName(QString::fromUtf8("time_upd"));
+        time_upd->setGeometry(QRect(40, 60, 158, 50));
+        sizePolicy1.setHeightForWidth(time_upd->sizePolicy().hasHeightForWidth());
+        time_upd->setSizePolicy(sizePolicy1);
+        time_upd->setMinimum(6000);
+        time_upd->setMaximum(60000);
         view->setCentralWidget(centralwidget);
         toolBar = new QToolBar(view);
         toolBar->setObjectName(QString::fromUtf8("toolBar"));
@@ -763,7 +759,6 @@ public:
         label_4->setText(QCoreApplication::translate("view", "         DOP_AGENT", nullptr));
         dop_on->setText(QCoreApplication::translate("view", "ON", nullptr));
         dop_off->setText(QCoreApplication::translate("view", "OFF", nullptr));
-        label_5->setText(QCoreApplication::translate("view", "TIME TO UPDATE", nullptr));
         start->setText(QCoreApplication::translate("view", "start", nullptr));
         stop->setText(QCoreApplication::translate("view", "stop", nullptr));
         groupBox_Memory_Agent->setTitle(QCoreApplication::translate("view", "                Memory Agent", nullptr));
@@ -794,6 +789,7 @@ public:
         pLabel_17->setText(QCoreApplication::translate("view", "Hard read time", nullptr));
         pLabel_18->setText(QCoreApplication::translate("view", "System errors", nullptr));
         pLabel_19->setText(QCoreApplication::translate("view", "User auths", nullptr));
+        groupBox_Timer->setTitle(QCoreApplication::translate("view", "               Time to update", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("view", "toolBar", nullptr));
     } // retranslateUi
 

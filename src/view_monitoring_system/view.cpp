@@ -12,6 +12,7 @@ view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view),  groupActio
   ui->groupBox_Network_Agent->hide();
   ui->groupBox_Cpu_Agent->hide();
   ui->groupBox_Special_Agent->hide();
+  ui->groupBox_Timer->hide();
 
 
 }
@@ -172,10 +173,12 @@ auto view::action_start_all() -> void {
 auto view::action_timer() -> void {
     if (ui->actionTimer->iconText() == "Start_all_on") {
         ui->actionTimer->setIcon(QIcon(":/images/timer_off.png"));
+        ui->groupBox_Timer->hide();
         ui->actionTimer->setIconText("Start_all_off");
     } else {
       ui->actionTimer->setIcon(QIcon(":/images/timer_on.png"));
       ui->actionTimer->setIconText("Start_all_on");
+      ui->groupBox_Timer->show();
 
     }
 
