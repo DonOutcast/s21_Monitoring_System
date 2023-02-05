@@ -33,7 +33,7 @@ void view::watcher_file() {
   //Создаем наследника
   fsWatcher = new QFileSystemWatcher(this);
   //устанавливаем слежку на файл
-  fsWatcher->addPath("/Users/luigiket/MonitoringSystem/logs.txt");
+  fsWatcher->addPath("../../../../logs.txt");
   //Связываем сигнал со слотом, как только файл будет изменен
   //произойдет вызов слота changed(QString)
   connect(fsWatcher, SIGNAL(fileChanged(QString)), this, SLOT(settext()));

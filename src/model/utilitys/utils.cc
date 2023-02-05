@@ -29,7 +29,7 @@ std::string get_time() {
 
 std::string print_last_string() {
   std::string command;
-  command = "cat /Users/luigiket/MonitoringSystem/logs.txt | tail -20";
+  command = "cat ../../../../logs.txt | tail -20";
   std::string output = "";
   char buffer[128];
   std::FILE *pipe = popen(command.c_str(), "r");
