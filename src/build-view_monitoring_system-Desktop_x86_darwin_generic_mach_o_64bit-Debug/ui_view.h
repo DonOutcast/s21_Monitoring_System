@@ -33,6 +33,7 @@ public:
     QAction *actionCpu_Agent;
     QAction *actionSpecial_Agent;
     QAction *actionStart_all;
+    QAction *actionTimer;
     QWidget *centralwidget;
     QTextBrowser *textBrowser;
     QWidget *verticalLayoutWidget;
@@ -148,6 +149,16 @@ public:
             icon4.addFile(QString::fromUtf8(":/images/start_off.png"), QSize(), QIcon::Normal, QIcon::Off);
         }
         actionStart_all->setIcon(icon4);
+        actionTimer = new QAction(view);
+        actionTimer->setObjectName(QString::fromUtf8("actionTimer"));
+        QIcon icon5;
+        iconThemeName = QString::fromUtf8("Timer");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon5 = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon5.addFile(QString::fromUtf8(":/images/timer_off.png"), QSize(), QIcon::Normal, QIcon::Off);
+        }
+        actionTimer->setIcon(icon5);
         centralwidget = new QWidget(view);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         textBrowser = new QTextBrowser(centralwidget);
@@ -456,6 +467,7 @@ public:
         toolBar->addAction(actionCpu_Agent);
         toolBar->addAction(actionSpecial_Agent);
         toolBar->addAction(actionStart_all);
+        toolBar->addAction(actionTimer);
 
         retranslateUi(view);
 
@@ -481,6 +493,10 @@ public:
         actionStart_all->setText(QCoreApplication::translate("view", "Start_all_off", nullptr));
 #if QT_CONFIG(tooltip)
         actionStart_all->setToolTip(QCoreApplication::translate("view", "Start_all_on", nullptr));
+#endif // QT_CONFIG(tooltip)
+        actionTimer->setText(QCoreApplication::translate("view", "Timer_off", nullptr));
+#if QT_CONFIG(tooltip)
+        actionTimer->setToolTip(QCoreApplication::translate("view", "Timer_off", nullptr));
 #endif // QT_CONFIG(tooltip)
         cpu_on->setText(QCoreApplication::translate("view", "ON", nullptr));
         cpu_off->setText(QCoreApplication::translate("view", "OFF", nullptr));

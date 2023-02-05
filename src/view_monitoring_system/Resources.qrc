@@ -11,5 +11,7 @@
         <file>images/agent_4_on.png</file>
         <file>images/start_off.png</file>
         <file>images/start_on.png</file>
+        <file>images/timer_off.png</file>
+        <file>images/timer_on.png</file>
     </qresource>
 </RCC>

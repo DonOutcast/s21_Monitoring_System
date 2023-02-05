@@ -969,8 +969,10 @@ qrc_Resources.cpp: ../view_monitoring_system/Resources.qrc \
 		../view_monitoring_system/images/agent_3_off.png \
 		../view_monitoring_system/images/agent_2_off.png \
 		../view_monitoring_system/images/agent_2_on.png \
+		../view_monitoring_system/images/timer_off.png \
 		../view_monitoring_system/images/start_off.png \
 		../view_monitoring_system/images/start_on.png \
+		../view_monitoring_system/images/timer_on.png \
 		../view_monitoring_system/images/agent_4_on.png \
 		../view_monitoring_system/images/bg.png \
 		../view_monitoring_system/images/agent_1_on.png

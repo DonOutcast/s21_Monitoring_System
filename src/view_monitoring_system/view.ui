@@ -695,6 +695,7 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
    <addaction name="actionCpu_Agent"/>
    <addaction name="actionSpecial_Agent"/>
    <addaction name="actionStart_all"/>
+   <addaction name="actionTimer"/>
   </widget>
   <action name="actionMemory_Agent">
    <property name="icon">
@@ -775,6 +776,18 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
    </property>
    <property name="toolTip">
     <string>Start_all_on</string>
+   </property>
+  </action>
+  <action name="actionTimer">
+   <property name="icon">
+    <iconset theme="Timer" resource="Resources.qrc">
+     <normaloff>:/images/timer_off.png</normaloff>:/images/timer_off.png</iconset>
+   </property>
+   <property name="text">
+    <string>Timer_off</string>
+   </property>
+   <property name="toolTip">
+    <string>Timer_off</string>
    </property>
   </action>
  </widget>

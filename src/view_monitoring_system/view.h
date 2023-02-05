@@ -32,6 +32,7 @@ public:
   auto action_cpu_agent() -> void;
   auto action_special_agent() -> void;
   auto action_start_all() -> void;
+  auto action_timer() -> void;
   QActionGroup *groupActionUpper_;
 
 private slots:

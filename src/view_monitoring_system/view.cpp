@@ -78,8 +78,7 @@ auto view::groupingActionUpperToolBar() ->void {
   this->groupActionUpper_->addAction(ui->actionCpu_Agent);
   this->groupActionUpper_->addAction(ui->actionSpecial_Agent);
   this->groupActionUpper_->addAction(ui->actionStart_all);
-//  this->groupActionUpper_->addAction(ui->actionTrain);
-//  this->groupActionUpper_->addAction(ui->actionTest);
+  this->groupActionUpper_->addAction(ui->actionTimer);
 }
 
 auto view::triggeredGroupActionUpper(QAction *action) -> void {
@@ -94,6 +93,8 @@ auto view::triggeredGroupActionUpper(QAction *action) -> void {
       this->action_special_agent();
   } else if (action == ui->actionStart_all) {
       this->action_start_all();
+  } else if (action == ui->actionTimer) {
+      this->action_timer();
   }
 }
 
@@ -157,4 +158,14 @@ auto view::action_start_all() -> void {
 
  }
 
+auto view::action_timer() -> void {
+    if (ui->actionTimer->iconText() == "Start_all_on") {
+        ui->actionTimer->setIcon(QIcon(":/images/timer_off.png"));
+        ui->actionTimer->setIconText("Start_all_off");
+    } else {
+      ui->actionTimer->setIcon(QIcon(":/images/timer_on.png"));
+      ui->actionTimer->setIconText("Start_all_on");
 
+    }
+
+ }
