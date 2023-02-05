@@ -13,23 +13,13 @@ view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view),  groupActio
   ui->groupBox_Cpu_Agent->hide();
   ui->groupBox_Special_Agent->hide();
   ui->groupBox_Timer->hide();
-
-
 }
 
 view::~view() {
     delete ui;
     delete this->groupActionUpper_;
-}
-
-//Запуск ядра
-void view::on_start_clicked() {
-  checker();
-  watcher_file();
-  controller->starting_project(agents);
-  connect(timer_, SIGNAL(timeout()), this, SLOT(on_start_clicked()));
-  timer_->setInterval(agents[4]);
-  timer_->start();
+    delete controller;
+    delete timer_;
 }
 
 //Слежка файла
@@ -50,23 +40,6 @@ void view::settext() {
   ui->textBrowser->setText(byteArray);
   ui->textBrowser->show();
 }
-
-//Проверка метрик
-void view::checker() {
-  agents[0] = (ui->cpu_on->isChecked()) ? 1 : 0;
-  agents[1] = (ui->mem_on->isChecked()) ? 1 : 0;
-  agents[2] = (ui->net_on->isChecked()) ? 1 : 0;
-  agents[3] = (ui->dop_on->isChecked()) ? 1 : 0;
-  agents[4] = ui->time_upd->text().toInt();
-}
-
-//Остановка ядра
-void view::on_stop_clicked() {
-  connect(timer_, SIGNAL(timeout()), this, SLOT(on_stop_clicked()));
-  timer_->stop();
-}
-
-
 
 auto view::setSlots() -> void {
     // группа QAction верхнего toolBar
@@ -107,13 +80,13 @@ auto view::action_memory_agent() -> void {
         ui->actionMemory_Agent->setIcon(QIcon(":/images/agent_1_off.png"));
         ui->groupBox_Memory_Agent->hide();
         ui->actionMemory_Agent->setIconText("Memory_Agent_off");
+        agents[1] = 0;
     } else {
       ui->actionMemory_Agent->setIcon(QIcon(":/images/agent_1_on.png"));
       ui->actionMemory_Agent->setIconText("Memory_Agent_on");
       ui->groupBox_Memory_Agent->show();
-
+      agents[1] = 1;
     }
-
  }
 
 auto view::action_network_agent() -> void {
@@ -121,27 +94,27 @@ auto view::action_network_agent() -> void {
         ui->actionNetwork_Agent->setIcon(QIcon(":/images/agent_2_off.png"));
         ui->groupBox_Network_Agent->hide();
         ui->actionNetwork_Agent->setIconText("Network_Agent_off");
+        agents[2] = 0;
     } else {
       ui->actionNetwork_Agent->setIcon(QIcon(":/images/agent_2_on.png"));
       ui->actionNetwork_Agent->setIconText("Network_Agent_on");
       ui->groupBox_Network_Agent->show();
-
+    agents[2] = 1;
     }
-
  }
 
 auto view::action_cpu_agent() -> void {
     if (ui->actionCpu_Agent->iconText() == "Network_Agent_on") {
         ui->actionCpu_Agent->setIcon(QIcon(":/images/agent_3_off.png"));
         ui->groupBox_Cpu_Agent->hide();
+        agents[0] = 0;
         ui->actionCpu_Agent->setIconText("Network_Agent_off");
     } else {
       ui->actionCpu_Agent->setIcon(QIcon(":/images/agent_3_on.png"));
       ui->actionCpu_Agent->setIconText("Network_Agent_on");
       ui->groupBox_Cpu_Agent->show();
-
+      agents[0] = 1;
     }
-
  }
 
 auto view::action_special_agent() -> void {
@@ -149,26 +122,34 @@ auto view::action_special_agent() -> void {
         ui->actionSpecial_Agent->setIcon(QIcon(":/images/agent_4_off.png"));
         ui->groupBox_Special_Agent->hide();
         ui->actionSpecial_Agent->setIconText("Network_Agent_off");
+        agents[3] = 0;
     } else {
       ui->actionSpecial_Agent->setIcon(QIcon(":/images/agent_4_on.png"));
       ui->actionSpecial_Agent->setIconText("Network_Agent_on");
       ui->groupBox_Special_Agent->show();
-
+        agents[3] = 1;
     }
-
  }
 
 auto view::action_start_all() -> void {
     if (ui->actionStart_all->iconText() == "Start_all_on") {
         ui->actionStart_all->setIcon(QIcon(":/images/start_off.png"));
         ui->actionStart_all->setIconText("Start_all_off");
+        timer_->stop();
     } else {
       ui->actionStart_all->setIcon(QIcon(":/images/start_on.png"));
       ui->actionStart_all->setIconText("Start_all_on");
-
+      watcher_file();
+      this->start_slot();
     }
-
  }
+
+auto view::start_slot() -> void {
+          controller->starting_project(agents);
+          connect(timer_, SIGNAL(timeout()), this, SLOT(start_slot()));
+          timer_->start();
+          timer_->setInterval(agents[4]);
+}
 
 auto view::action_timer() -> void {
     if (ui->actionTimer->iconText() == "Start_all_on") {
@@ -179,7 +160,6 @@ auto view::action_timer() -> void {
       ui->actionTimer->setIcon(QIcon(":/images/timer_on.png"));
       ui->actionTimer->setIconText("Start_all_on");
       ui->groupBox_Timer->show();
-
+      agents[4] = ui->time_upd->text().toInt();
     }
-
  }

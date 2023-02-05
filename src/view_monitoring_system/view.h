@@ -39,17 +39,19 @@ private slots:
   auto triggeredGroupActionUpper(QAction *action) -> void;
 
 private slots:
-  void on_start_clicked();
+//  void on_start_clicked();
   void watcher_file();
   void settext();
-  void on_stop_clicked();
-  void checker();
+  auto start_slot() -> void;
+
+//  void on_stop_clicked();
+//  void checker();
 
 private:
   Ui::view *ui;
   s21::Controller *controller = nullptr;
   QFileSystemWatcher *fsWatcher;
   QTimer *timer_;
-  vector<int> agents{0, 0, 0, 0, 0};
+  vector<int> agents{0, 0, 0, 0, 6000};
 };
 

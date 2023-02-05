@@ -15,12 +15,9 @@
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QToolBar>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -36,29 +33,6 @@ public:
     QAction *actionTimer;
     QWidget *centralwidget;
     QTextBrowser *textBrowser;
-    QWidget *verticalLayoutWidget;
-    QVBoxLayout *verticalLayout;
-    QRadioButton *cpu_on;
-    QRadioButton *cpu_off;
-    QWidget *verticalLayoutWidget_2;
-    QVBoxLayout *verticalLayout_2;
-    QLabel *label_2;
-    QRadioButton *mem_on;
-    QRadioButton *mem_of;
-    QWidget *verticalLayoutWidget_3;
-    QVBoxLayout *verticalLayout_3;
-    QLabel *label_3;
-    QRadioButton *net_on;
-    QRadioButton *net_off;
-    QWidget *verticalLayoutWidget_4;
-    QVBoxLayout *verticalLayout_4;
-    QLabel *label_4;
-    QRadioButton *dop_on;
-    QRadioButton *dop_off;
-    QWidget *verticalLayoutWidget_6;
-    QVBoxLayout *verticalLayout_6;
-    QPushButton *start;
-    QPushButton *stop;
     QGroupBox *groupBox_Memory_Agent;
     QLabel *pLabel;
     QLabel *aLabel;
@@ -66,7 +40,6 @@ public:
     QLabel *pLabel_3;
     QLabel *pLabel_4;
     QLabel *pLabel_5;
-    QLabel *label;
     QGroupBox *groupBox_Network_Agent;
     QLabel *pLabel_6;
     QLabel *aLabel_2;
@@ -95,7 +68,7 @@ public:
     {
         if (view->objectName().isEmpty())
             view->setObjectName(QString::fromUtf8("view"));
-        view->resize(1438, 1277);
+        view->resize(1294, 1277);
         view->setMaximumSize(QSize(16777, 16778));
         view->setStyleSheet(QString::fromUtf8("\n"
 "QMainWindow{\n"
@@ -178,7 +151,7 @@ public:
         textBrowser = new QTextBrowser(centralwidget);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setEnabled(true);
-        textBrowser->setGeometry(QRect(10, 0, 1291, 621));
+        textBrowser->setGeometry(QRect(0, 0, 1291, 621));
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Ignored);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -199,112 +172,6 @@ public:
         textBrowser->setMidLineWidth(0);
         textBrowser->setReadOnly(false);
         textBrowser->setTextInteractionFlags(Qt::TextEditable);
-        verticalLayoutWidget = new QWidget(centralwidget);
-        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(1229, 659, 51, 101));
-        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        cpu_on = new QRadioButton(verticalLayoutWidget);
-        cpu_on->setObjectName(QString::fromUtf8("cpu_on"));
-        cpu_on->setChecked(true);
-
-        verticalLayout->addWidget(cpu_on);
-
-        cpu_off = new QRadioButton(verticalLayoutWidget);
-        cpu_off->setObjectName(QString::fromUtf8("cpu_off"));
-
-        verticalLayout->addWidget(cpu_off);
-
-        verticalLayoutWidget_2 = new QWidget(centralwidget);
-        verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(1380, 750, 161, 111));
-        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_2);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        label_2 = new QLabel(verticalLayoutWidget_2);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-
-        verticalLayout_2->addWidget(label_2);
-
-        mem_on = new QRadioButton(verticalLayoutWidget_2);
-        mem_on->setObjectName(QString::fromUtf8("mem_on"));
-        mem_on->setChecked(true);
-
-        verticalLayout_2->addWidget(mem_on);
-
-        mem_of = new QRadioButton(verticalLayoutWidget_2);
-        mem_of->setObjectName(QString::fromUtf8("mem_of"));
-
-        verticalLayout_2->addWidget(mem_of);
-
-        verticalLayoutWidget_3 = new QWidget(centralwidget);
-        verticalLayoutWidget_3->setObjectName(QString::fromUtf8("verticalLayoutWidget_3"));
-        verticalLayoutWidget_3->setGeometry(QRect(1260, 770, 161, 111));
-        verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
-        label_3 = new QLabel(verticalLayoutWidget_3);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-
-        verticalLayout_3->addWidget(label_3);
-
-        net_on = new QRadioButton(verticalLayoutWidget_3);
-        net_on->setObjectName(QString::fromUtf8("net_on"));
-        net_on->setChecked(true);
-
-        verticalLayout_3->addWidget(net_on);
-
-        net_off = new QRadioButton(verticalLayoutWidget_3);
-        net_off->setObjectName(QString::fromUtf8("net_off"));
-
-        verticalLayout_3->addWidget(net_off);
-
-        verticalLayoutWidget_4 = new QWidget(centralwidget);
-        verticalLayoutWidget_4->setObjectName(QString::fromUtf8("verticalLayoutWidget_4"));
-        verticalLayoutWidget_4->setGeometry(QRect(1080, 790, 161, 111));
-        verticalLayout_4 = new QVBoxLayout(verticalLayoutWidget_4);
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
-        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
-        label_4 = new QLabel(verticalLayoutWidget_4);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-
-        verticalLayout_4->addWidget(label_4);
-
-        dop_on = new QRadioButton(verticalLayoutWidget_4);
-        dop_on->setObjectName(QString::fromUtf8("dop_on"));
-        dop_on->setChecked(true);
-
-        verticalLayout_4->addWidget(dop_on);
-
-        dop_off = new QRadioButton(verticalLayoutWidget_4);
-        dop_off->setObjectName(QString::fromUtf8("dop_off"));
-
-        verticalLayout_4->addWidget(dop_off);
-
-        verticalLayoutWidget_6 = new QWidget(centralwidget);
-        verticalLayoutWidget_6->setObjectName(QString::fromUtf8("verticalLayoutWidget_6"));
-        verticalLayoutWidget_6->setGeometry(QRect(1290, 650, 160, 111));
-        verticalLayout_6 = new QVBoxLayout(verticalLayoutWidget_6);
-        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
-        verticalLayout_6->setContentsMargins(0, 0, 0, 0);
-        start = new QPushButton(verticalLayoutWidget_6);
-        start->setObjectName(QString::fromUtf8("start"));
-        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(start->sizePolicy().hasHeightForWidth());
-        start->setSizePolicy(sizePolicy1);
-
-        verticalLayout_6->addWidget(start);
-
-        stop = new QPushButton(verticalLayoutWidget_6);
-        stop->setObjectName(QString::fromUtf8("stop"));
-        sizePolicy1.setHeightForWidth(stop->sizePolicy().hasHeightForWidth());
-        stop->setSizePolicy(sizePolicy1);
-
-        verticalLayout_6->addWidget(stop);
-
         groupBox_Memory_Agent = new QGroupBox(centralwidget);
         groupBox_Memory_Agent->setObjectName(QString::fromUtf8("groupBox_Memory_Agent"));
         groupBox_Memory_Agent->setGeometry(QRect(270, 630, 251, 471));
@@ -320,7 +187,6 @@ public:
         pLabel->setObjectName(QString::fromUtf8("pLabel"));
         pLabel->setGeometry(QRect(10, 80, 211, 31));
         QFont font2;
-        font2.setFamilies({QString::fromUtf8("Umpush")});
         font2.setPointSize(16);
         font2.setBold(true);
         font2.setItalic(false);
@@ -405,9 +271,6 @@ public:
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8 , stop:1 #4169E1);\n"
 "}"));
         pLabel_5->setAlignment(Qt::AlignCenter);
-        label = new QLabel(centralwidget);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(1080, 640, 158, 65));
         groupBox_Network_Agent = new QGroupBox(centralwidget);
         groupBox_Network_Agent->setObjectName(QString::fromUtf8("groupBox_Network_Agent"));
         groupBox_Network_Agent->setGeometry(QRect(530, 630, 251, 291));
@@ -693,6 +556,9 @@ public:
         time_upd = new QSpinBox(groupBox_Timer);
         time_upd->setObjectName(QString::fromUtf8("time_upd"));
         time_upd->setGeometry(QRect(40, 60, 158, 50));
+        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(time_upd->sizePolicy().hasHeightForWidth());
         time_upd->setSizePolicy(sizePolicy1);
         time_upd->setMinimum(6000);
@@ -748,19 +614,6 @@ public:
 #if QT_CONFIG(tooltip)
         actionTimer->setToolTip(QCoreApplication::translate("view", "Timer_off", nullptr));
 #endif // QT_CONFIG(tooltip)
-        cpu_on->setText(QCoreApplication::translate("view", "ON", nullptr));
-        cpu_off->setText(QCoreApplication::translate("view", "OFF", nullptr));
-        label_2->setText(QCoreApplication::translate("view", "         MEMORY_AGENT", nullptr));
-        mem_on->setText(QCoreApplication::translate("view", "ON", nullptr));
-        mem_of->setText(QCoreApplication::translate("view", "OFF", nullptr));
-        label_3->setText(QCoreApplication::translate("view", "       NETWORK_AGENT", nullptr));
-        net_on->setText(QCoreApplication::translate("view", "ON", nullptr));
-        net_off->setText(QCoreApplication::translate("view", "OFF", nullptr));
-        label_4->setText(QCoreApplication::translate("view", "         DOP_AGENT", nullptr));
-        dop_on->setText(QCoreApplication::translate("view", "ON", nullptr));
-        dop_off->setText(QCoreApplication::translate("view", "OFF", nullptr));
-        start->setText(QCoreApplication::translate("view", "start", nullptr));
-        stop->setText(QCoreApplication::translate("view", "stop", nullptr));
         groupBox_Memory_Agent->setTitle(QCoreApplication::translate("view", "                Memory Agent", nullptr));
         pLabel->setText(QCoreApplication::translate("view", "Ram", nullptr));
         aLabel->setText(QCoreApplication::translate("view", "Memory Agent", nullptr));
@@ -768,7 +621,6 @@ public:
         pLabel_3->setText(QCoreApplication::translate("view", "Hard Volume", nullptr));
         pLabel_4->setText(QCoreApplication::translate("view", "Hard Ops", nullptr));
         pLabel_5->setText(QCoreApplication::translate("view", "Hard Throughput", nullptr));
-        label->setText(QCoreApplication::translate("view", "         CPU_AGENT", nullptr));
         groupBox_Network_Agent->setTitle(QCoreApplication::translate("view", "               Network Agent", nullptr));
         pLabel_6->setText(QCoreApplication::translate("view", "Url", nullptr));
         aLabel_2->setText(QCoreApplication::translate("view", "Memory Agent", nullptr));

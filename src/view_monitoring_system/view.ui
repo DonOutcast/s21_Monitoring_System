@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1438</width>
+    <width>1294</width>
     <height>1277</height>
    </rect>
   </property>
@@ -39,7 +39,7 @@ background-image: url(:/images/bg.png);
     </property>
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>0</y>
       <width>1291</width>
       <height>621</height>
@@ -85,181 +85,6 @@ QTextBrowser{
      <set>Qt::TextEditable</set>
     </property>
    </widget>
-   <widget class="QWidget" name="verticalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>1229</x>
-      <y>659</y>
-      <width>51</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QRadioButton" name="cpu_on">
-       <property name="text">
-        <string>ON</string>
-       </property>
-       <property name="checked">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="cpu_off">
-       <property name="text">
-        <string>OFF</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_2">
-    <property name="geometry">
-     <rect>
-      <x>1380</x>
-      <y>750</y>
-      <width>161</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>         MEMORY_AGENT</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="mem_on">
-       <property name="text">
-        <string>ON</string>
-       </property>
-       <property name="checked">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="mem_of">
-       <property name="text">
-        <string>OFF</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_3">
-    <property name="geometry">
-     <rect>
-      <x>1260</x>
-      <y>770</y>
-      <width>161</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>       NETWORK_AGENT</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="net_on">
-       <property name="text">
-        <string>ON</string>
-       </property>
-       <property name="checked">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="net_off">
-       <property name="text">
-        <string>OFF</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_4">
-    <property name="geometry">
-     <rect>
-      <x>1080</x>
-      <y>790</y>
-      <width>161</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>         DOP_AGENT</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="dop_on">
-       <property name="text">
-        <string>ON</string>
-       </property>
-       <property name="checked">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QRadioButton" name="dop_off">
-       <property name="text">
-        <string>OFF</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="verticalLayoutWidget_6">
-    <property name="geometry">
-     <rect>
-      <x>1290</x>
-      <y>650</y>
-      <width>160</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_6">
-     <item>
-      <widget class="QPushButton" name="start">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>start</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="stop">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="text">
-        <string>stop</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QGroupBox" name="groupBox_Memory_Agent">
     <property name="geometry">
      <rect>
@@ -293,7 +118,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -328,7 +152,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -363,7 +186,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -398,7 +220,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -433,7 +254,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -468,7 +288,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -492,19 +311,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>1080</x>
-      <y>640</y>
-      <width>158</width>
-      <height>65</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>         CPU_AGENT</string>
-    </property>
    </widget>
    <widget class="QGroupBox" name="groupBox_Network_Agent">
     <property name="geometry">
@@ -539,7 +345,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -574,7 +379,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -609,7 +413,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -667,7 +470,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -702,7 +504,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -737,7 +538,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -795,7 +595,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -830,7 +629,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -865,7 +663,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -900,7 +697,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -935,7 +731,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -970,7 +765,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -1005,7 +799,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -1040,7 +833,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -1075,7 +867,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -1110,7 +901,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
@@ -1145,7 +935,6 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
      </property>
      <property name="font">
       <font>
-       <family>Umpush</family>
        <pointsize>16</pointsize>
        <italic>false</italic>
        <bold>true</bold>
