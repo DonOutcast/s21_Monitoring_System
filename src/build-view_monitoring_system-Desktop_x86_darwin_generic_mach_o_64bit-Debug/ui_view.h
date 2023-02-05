@@ -30,6 +30,7 @@ class Ui_view
 public:
     QAction *actionMemory_Agent;
     QAction *actionNetwork_Agent;
+    QAction *actionCpu_Agent;
     QWidget *centralwidget;
     QTextBrowser *textBrowser;
     QWidget *verticalLayoutWidget;
@@ -115,6 +116,16 @@ public:
             icon1.addFile(QString::fromUtf8(":/images/agent_2_off.png"), QSize(), QIcon::Normal, QIcon::Off);
         }
         actionNetwork_Agent->setIcon(icon1);
+        actionCpu_Agent = new QAction(view);
+        actionCpu_Agent->setObjectName(QString::fromUtf8("actionCpu_Agent"));
+        QIcon icon2;
+        iconThemeName = QString::fromUtf8("Cpu_Agent");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon2 = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon2.addFile(QString::fromUtf8(":/images/agent_3_off.png"), QSize(), QIcon::Normal, QIcon::Off);
+        }
+        actionCpu_Agent->setIcon(icon2);
         centralwidget = new QWidget(view);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         textBrowser = new QTextBrowser(centralwidget);
@@ -420,6 +431,7 @@ public:
 
         toolBar->addAction(actionMemory_Agent);
         toolBar->addAction(actionNetwork_Agent);
+        toolBar->addAction(actionCpu_Agent);
 
         retranslateUi(view);
 
@@ -433,6 +445,10 @@ public:
         actionNetwork_Agent->setText(QCoreApplication::translate("view", "Network_Agent_off", nullptr));
 #if QT_CONFIG(tooltip)
         actionNetwork_Agent->setToolTip(QCoreApplication::translate("view", "Network_Agent", nullptr));
+#endif // QT_CONFIG(tooltip)
+        actionCpu_Agent->setText(QCoreApplication::translate("view", "Cpu_Agent_off", nullptr));
+#if QT_CONFIG(tooltip)
+        actionCpu_Agent->setToolTip(QCoreApplication::translate("view", "Cpu_Agent_off", nullptr));
 #endif // QT_CONFIG(tooltip)
         cpu_on->setText(QCoreApplication::translate("view", "ON", nullptr));
         cpu_off->setText(QCoreApplication::translate("view", "OFF", nullptr));

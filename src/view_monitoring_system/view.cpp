@@ -75,7 +75,7 @@ auto view::setSlots() -> void {
 auto view::groupingActionUpperToolBar() ->void {
   this->groupActionUpper_->addAction(ui->actionMemory_Agent);
   this->groupActionUpper_->addAction(ui->actionNetwork_Agent);
-//  this->groupActionUpper_->addAction(ui->actionSettings);
+  this->groupActionUpper_->addAction(ui->actionCpu_Agent);
 //  this->groupActionUpper_->addAction(ui->actionUpload_weights);
 //  this->groupActionUpper_->addAction(ui->actionDownload_weights);
 //  this->groupActionUpper_->addAction(ui->actionTrain);
@@ -88,6 +88,8 @@ auto view::triggeredGroupActionUpper(QAction *action) -> void {
   }
   else if (action == ui->actionNetwork_Agent) {
     this->action_network_agent();
+  } else if (action == ui->actionCpu_Agent) {
+    this->action_cpu_agent();
   }
       //else if (action == ui->actionSettings) {
 //    this->settings_on_off();
@@ -125,4 +127,17 @@ auto view::action_network_agent() -> void {
     }
 
  }
+
+auto view::action_cpu_agent() -> void {
+    if (ui->actionCpu_Agent->iconText() == "Network_Agent_on") {
+        ui->actionCpu_Agent->setIcon(QIcon(":/images/agent_3_off.png"));
+        ui->actionCpu_Agent->setIconText("Network_Agent_off");
+    } else {
+      ui->actionCpu_Agent->setIcon(QIcon(":/images/agent_3_on.png"));
+      ui->actionCpu_Agent->setIconText("Network_Agent_on");
+
+    }
+
+ }
+
 

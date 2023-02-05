@@ -692,6 +692,7 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
    </attribute>
    <addaction name="actionMemory_Agent"/>
    <addaction name="actionNetwork_Agent"/>
+   <addaction name="actionCpu_Agent"/>
   </widget>
   <action name="actionMemory_Agent">
    <property name="icon">
@@ -736,6 +737,18 @@ border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 #30D5C8
    </property>
    <property name="toolTip">
     <string>Network_Agent</string>
+   </property>
+  </action>
+  <action name="actionCpu_Agent">
+   <property name="icon">
+    <iconset theme="Cpu_Agent" resource="Resources.qrc">
+     <normaloff>:/images/agent_3_off.png</normaloff>:/images/agent_3_off.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cpu_Agent_off</string>
+   </property>
+   <property name="toolTip">
+    <string>Cpu_Agent_off</string>
    </property>
   </action>
  </widget>

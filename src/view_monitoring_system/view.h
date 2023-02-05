@@ -29,6 +29,7 @@ public:
   auto setSlots() -> void ;
   auto action_memory_agent() -> void;
   auto action_network_agent() -> void;
+  auto action_cpu_agent() -> void;
   QActionGroup *groupActionUpper_;
 
 private slots:
