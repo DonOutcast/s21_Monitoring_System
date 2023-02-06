@@ -1,7 +1,7 @@
 #include "view.h"
 #include "ui_view.h"
 
-view::view(QWidget *parent) : QMainWindow(parent), ui(new Ui::view),  groupActionUpper_(new QActionGroup(this)) {
+view::view(QWidget *parent) : QMainWindow(parent), groupActionUpper_(new QActionGroup(this)), ui(new Ui::view) {
   ui->setupUi(this);
   timer_ = new QTimer(this);
   /*---группировка actions находящихся на верхнем toolBar---*/
@@ -29,6 +29,7 @@ void view::watcher_file() {
   fsWatcher = new QFileSystemWatcher(this);
   //устанавливаем слежку на файл
   fsWatcher->addPath("../../../../logs.txt");
+  qDebug() << "watcher";
   //Связываем сигнал со слотом, как только файл будет изменен
   //произойдет вызов слота changed(QString)
   connect(fsWatcher, SIGNAL(fileChanged(QString)), this, SLOT(settext()));
