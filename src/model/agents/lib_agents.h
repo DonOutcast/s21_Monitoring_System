@@ -34,9 +34,9 @@ public:
   inline static monitor_metr system_metrics;
   inline static config_t config_map;
 
-  static void read_conf();
+  static void read_conf(std::string &path_config);
   static void starting_agents(std::string &lvl_privilege, std::string &url,
-                              std::vector<int> &agents);
+                              std::vector<int> &agents, std::string &path_logs);
 
   void compare_maps();
 
@@ -56,9 +56,9 @@ public:
   }
 
 public:
-  static void cpu_agent();
-  static void memory_agent();
-  static void network_agent(std::string &url);
-  static void special_agent(std::string &lvl_privilege);
-  static void starting_bot(std::vector<int> &agents);
+  static void cpu_agent(std::string &path_logs);
+  static void memory_agent(std::string &path_logs);
+  static void network_agent(std::string &url, std::string &path_logs);
+  static void special_agent(std::string &lvl_privilege, std::string &path_logs);
+  static void starting_bot(std::vector<int> &agents, std::string &path_config, std::string &path_logs);
 };

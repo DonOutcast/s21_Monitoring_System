@@ -10,6 +10,8 @@
 #include <QDateTime>
 #include <QActionGroup>
 #include <QDebug>
+#include <QFileDialog>
+#include <QDir>
 
 
 QT_BEGIN_NAMESPACE
@@ -39,13 +41,11 @@ private slots:
   auto triggeredGroupActionUpper(QAction *action) -> void;
 
 private slots:
-//  void on_start_clicked();
   void watcher_file();
   void settext();
   auto start_slot() -> void;
-
-//  void on_stop_clicked();
-//  void checker();
+  void on_logs_txt_clicked();
+  void on_config_conf_clicked();
 
 private:
   Ui::view *ui;
@@ -53,5 +53,7 @@ private:
   QFileSystemWatcher *fsWatcher;
   QTimer *timer_;
   vector<int> agents{0, 0, 0, 0, 6000};
+  QString path_logs;
+  QString path_config;
 };
 

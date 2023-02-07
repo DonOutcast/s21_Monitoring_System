@@ -110,7 +110,7 @@ double hard_throughput() {
 }
 } // namespace
 
-void Lib_agent::memory_agent() {
+void Lib_agent::memory_agent(std::string &path_logs) {
   std::stringstream result;
   double ram_total_ = ram_total();
   double ram_ = ram();
@@ -130,7 +130,7 @@ void Lib_agent::memory_agent() {
          << " : " << round(hard_ops_ * 100) / 100 << " | "
          << "hard_throughput"
          << " : " << round(hard_throughput_ * 100) / 100;
-  input_file(result.str());
+  input_file(result.str(), path_logs);
   system_metrics.insert(std::make_pair("ram_total", ram_total_));
   system_metrics.insert(std::make_pair("ram", ram_));
   system_metrics.insert(std::make_pair("hard_volume", hard_volume_));

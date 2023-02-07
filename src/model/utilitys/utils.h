@@ -13,9 +13,8 @@
 #include <string>
 #include <thread>
 #include <vector>
-
-void input_file(std::string text);
+void input_file(std::string text, std::string &path_logs);
 std::string get_time();
-std::string print_last_string();
+std::string print_last_string(std::string &path_logs);
 
 #endif

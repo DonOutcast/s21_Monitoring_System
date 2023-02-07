@@ -236,7 +236,7 @@ int number_of_user_authorizations() {
 }
 } // namespace
 
-void Lib_agent::special_agent(std::string &lvl_privilege) {
+void Lib_agent::special_agent(std::string &lvl_privilege, std::string &path_logs) {
   std::stringstream result;
   double cpu_load_privilege_ = cpu_load_privilege(lvl_privilege);
   double total_swap_volume_ = total_swap_volume();
@@ -273,7 +273,7 @@ void Lib_agent::special_agent(std::string &lvl_privilege) {
          << " | "
          << "user_auths"
          << " : " << round(number_of_user_authorizations_ * 100) / 100;
-  input_file(result.str());
+  input_file(result.str(), path_logs);
   system_metrics.insert(std::make_pair("priveleged", cpu_load_privilege_));
   system_metrics.insert(std::make_pair("total_swap", total_swap_volume_));
   system_metrics.insert(std::make_pair("used_swap", amount_of_swap_used_));

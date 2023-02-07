@@ -1,5 +1,4 @@
 #include "lib_agents.h"
-
 namespace {
 double cpu_load() {
   std::string command;
@@ -45,7 +44,7 @@ int number_of_processes() {
 }
 } // namespace
 
-void Lib_agent::cpu_agent() {
+void Lib_agent::cpu_agent(std::string &path_logs) {
   std::stringstream result;
   double cpu_usage = cpu_load();
   int processes = number_of_processes();
@@ -56,7 +55,7 @@ void Lib_agent::cpu_agent() {
          << " : " << round(cpu_usage * 100) / 100 << " | "
          << "processes"
          << " : " << std::to_string(processes);
-  input_file(result.str());
+  input_file(result.str(), path_logs);
   system_metrics.insert(std::make_pair("cpu", cpu_usage));
   system_metrics.insert(std::make_pair("processes", processes));
 }

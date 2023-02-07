@@ -52,7 +52,7 @@ double speed_network() {
 }
 } // namespace
 
-void Lib_agent::network_agent(std::string &url) {
+void Lib_agent::network_agent(std::string &url, std::string &path_logs) {
   std::stringstream result;
   double speed_network_ = speed_network();
   int url_ = validation_url(url);
@@ -62,7 +62,7 @@ void Lib_agent::network_agent(std::string &url) {
          << ((url_ == 1) ? ("available") : ("not available")) << " | "
          << "inet_throughput"
          << " : " << round(speed_network_ * 100) / 100;
-  input_file(result.str());
+  input_file(result.str(), path_logs);
   system_metrics.insert(std::make_pair("url", url_));
   system_metrics.insert(std::make_pair("inet_throughput", speed_network_));
 }

@@ -1,9 +1,6 @@
 #include "lib_agents.h"
-#include <QDebug>
-
-void Lib_agent::read_conf() {
-  qDebug() << "read_conf";
-  std::ifstream file("../config.conf");
+void Lib_agent::read_conf(std::string &path_config) {
+  std::ifstream file(path_config, std::ifstream::in);
   if (!file.good()) {
     throw std::runtime_error("File not exist!");
   }
